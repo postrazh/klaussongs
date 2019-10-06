@@ -1,0 +1,129 @@
+2019-09-22T23:59:56+00:00 DEBUG ---[ New Import start at 2019-09-22 23:59:56 ] PHP Memory: 2 GB, WP Memory: 2 GB
+2019-09-22T23:59:57+00:00 DEBUG Import Start Pos: 0, Import End Pos: 2236
+2019-09-22T23:59:57+00:00 DEBUG Parsing products CSV.
+2019-09-22T23:59:57+00:00 DEBUG Finished parsing products CSV.
+2019-09-22T23:59:57+00:00 DEBUG Processing products.
+2019-09-22T23:59:57+00:00 DEBUG > Row 1 - preparing for import.
+2019-09-22T23:59:57+00:00 DEBUG > > Inserted Raw Term 4.01 ID = 75
+2019-09-22T23:59:57+00:00 DEBUG > > Raw Term VS2 ID = 27
+2019-09-22T23:59:57+00:00 DEBUG > > Raw Term J ID = 61
+2019-09-22T23:59:57+00:00 DEBUG > > Raw Term Very Good ID = 47
+2019-09-22T23:59:57+00:00 DEBUG > > Raw Term IGI ID = 21
+2019-09-22T23:59:57+00:00 DEBUG > > Raw Term Asscher ID = 58
+2019-09-22T23:59:57+00:00 DEBUG > > Raw Term Good ID = 46
+2019-09-22T23:59:57+00:00 DEBUG > Inserting 4.01 Carat Asscher Diamond
+2019-09-22T23:59:57+00:00 DEBUG > Inserted - post ID is 223.
+2019-09-22T23:59:57+00:00 DEBUG > Finished importing post ID 223.
+2019-09-22T23:59:57+00:00 DEBUG > Row 2 - preparing for import.
+2019-09-22T23:59:57+00:00 DEBUG > > Inserted Raw Term 5.03 ID = 76
+2019-09-22T23:59:57+00:00 DEBUG > > Raw Term VS2 ID = 27
+2019-09-22T23:59:57+00:00 DEBUG > > Raw Term G ID = 42
+2019-09-22T23:59:57+00:00 DEBUG > > Raw Term Excellent ID = 39
+2019-09-22T23:59:57+00:00 DEBUG > > Raw Term IGI ID = 21
+2019-09-22T23:59:57+00:00 DEBUG > > Raw Term Asscher ID = 58
+2019-09-22T23:59:57+00:00 DEBUG > > Raw Term Excellent ID = 53
+2019-09-22T23:59:57+00:00 DEBUG > Inserting 4.01 Carat Asscher Diamond
+2019-09-22T23:59:57+00:00 DEBUG > Inserted - post ID is 224.
+2019-09-22T23:59:57+00:00 DEBUG > > Importing image "https://www.wdlgdia.com/Video_Web/imaged/85156_1/still.jpg"
+2019-09-22T23:59:57+00:00 DEBUG > > Inserted image attachment "https://www.wdlgdia.com/Video_Web/imaged/85156_1/still.jpg"
+2019-09-22T23:59:57+00:00 DEBUG > > Imported image "https://www.wdlgdia.com/Video_Web/imaged/85156_1/still.jpg"
+2019-09-22T23:59:57+00:00 DEBUG > > Images set
+2019-09-22T23:59:57+00:00 DEBUG > Finished importing post ID 224.
+2019-09-22T23:59:57+00:00 DEBUG > Row 3 - preparing for import.
+2019-09-22T23:59:57+00:00 DEBUG > > Inserted Raw Term 2.09 ID = 77
+2019-09-22T23:59:57+00:00 DEBUG > > Raw Term VS1 ID = 56
+2019-09-22T23:59:57+00:00 DEBUG > > Raw Term J ID = 61
+2019-09-22T23:59:57+00:00 DEBUG > > Raw Term Very Good ID = 47
+2019-09-22T23:59:57+00:00 DEBUG > > Raw Term IGI ID = 21
+2019-09-22T23:59:57+00:00 DEBUG > > Raw Term Cushion ID = 22
+2019-09-22T23:59:57+00:00 DEBUG > > Raw Term Very Good ID = 31
+2019-09-22T23:59:57+00:00 DEBUG > Inserting 5.03 Carat Asscher Diamond
+2019-09-22T23:59:57+00:00 DEBUG > Inserted - post ID is 226.
+2019-09-22T23:59:57+00:00 DEBUG > Finished importing post ID 226.
+2019-09-22T23:59:57+00:00 DEBUG > Row 4 - preparing for import.
+2019-09-22T23:59:57+00:00 DEBUG > > Inserted Raw Term 4.02 ID = 78
+2019-09-22T23:59:57+00:00 DEBUG > > Raw Term VS1 ID = 56
+2019-09-22T23:59:57+00:00 DEBUG > > Raw Term J ID = 61
+2019-09-22T23:59:57+00:00 DEBUG > > Raw Term Excellent ID = 39
+2019-09-22T23:59:57+00:00 DEBUG > > Raw Term IGI ID = 21
+2019-09-22T23:59:57+00:00 DEBUG > > Raw Term Cushion ID = 22
+2019-09-22T23:59:57+00:00 DEBUG > > Raw Term Very Good ID = 31
+2019-09-22T23:59:57+00:00 DEBUG > Inserting 2.09 Carat Cushion Diamond
+2019-09-22T23:59:57+00:00 DEBUG > Inserted - post ID is 227.
+2019-09-22T23:59:57+00:00 DEBUG > > Importing image "https://www.wdlgdia.com/Video_Web/imaged/74041_1/still.jpg"
+2019-09-22T23:59:59+00:00 DEBUG > > Inserted image attachment "https://www.wdlgdia.com/Video_Web/imaged/74041_1/still.jpg"
+2019-09-22T23:59:59+00:00 DEBUG > > Imported image "https://www.wdlgdia.com/Video_Web/imaged/74041_1/still.jpg"
+2019-09-22T23:59:59+00:00 DEBUG > > Images set
+2019-09-22T23:59:59+00:00 DEBUG > Finished importing post ID 227.
+2019-09-22T23:59:59+00:00 DEBUG > Row 5 - preparing for import.
+2019-09-22T23:59:59+00:00 DEBUG > > Inserted Raw Term 1.59 ID = 79
+2019-09-22T23:59:59+00:00 DEBUG > > Raw Term VS2 ID = 27
+2019-09-22T23:59:59+00:00 DEBUG > > Raw Term F ID = 35
+2019-09-22T23:59:59+00:00 DEBUG > > Raw Term Very Good ID = 47
+2019-09-22T23:59:59+00:00 DEBUG > > Raw Term IGI ID = 21
+2019-09-22T23:59:59+00:00 DEBUG > > Raw Term Cushion ID = 22
+2019-09-22T23:59:59+00:00 DEBUG > > Raw Term Very Good ID = 31
+2019-09-22T23:59:59+00:00 DEBUG > Inserting 4.02 Carat Cushion Diamond
+2019-09-22T23:59:59+00:00 DEBUG > Inserted - post ID is 229.
+2019-09-23T00:00:00+00:00 DEBUG > > Importing image "https://www.wdlgdia.com/Video_Web/imaged/80818_2/still.jpg"
+2019-09-23T00:00:00+00:00 DEBUG > > Inserted image attachment "https://www.wdlgdia.com/Video_Web/imaged/80818_2/still.jpg"
+2019-09-23T00:00:00+00:00 DEBUG > > Imported image "https://www.wdlgdia.com/Video_Web/imaged/80818_2/still.jpg"
+2019-09-23T00:00:00+00:00 DEBUG > > Images set
+2019-09-23T00:00:00+00:00 DEBUG > Finished importing post ID 229.
+2019-09-23T00:00:00+00:00 DEBUG > Row 6 - preparing for import.
+2019-09-23T00:00:00+00:00 DEBUG > > Inserted Raw Term 1.01 ID = 80
+2019-09-23T00:00:00+00:00 DEBUG > > Raw Term VVS1 ID = 49
+2019-09-23T00:00:00+00:00 DEBUG > > Raw Term G ID = 42
+2019-09-23T00:00:00+00:00 DEBUG > > Raw Term Very Good ID = 47
+2019-09-23T00:00:00+00:00 DEBUG > > Raw Term IGI ID = 21
+2019-09-23T00:00:00+00:00 DEBUG > > Raw Term Cushion ID = 22
+2019-09-23T00:00:00+00:00 DEBUG > > Raw Term Very Good ID = 31
+2019-09-23T00:00:00+00:00 DEBUG > Inserting 1.59 Carat Cushion Diamond
+2019-09-23T00:00:00+00:00 DEBUG > Inserted - post ID is 231.
+2019-09-23T00:00:00+00:00 DEBUG > > Importing image "https://www.wdlgdia.com/Video_Web/imaged/78761_2/still.jpg"
+2019-09-23T00:00:00+00:00 DEBUG > > Inserted image attachment "https://www.wdlgdia.com/Video_Web/imaged/78761_2/still.jpg"
+2019-09-23T00:00:00+00:00 DEBUG > > Imported image "https://www.wdlgdia.com/Video_Web/imaged/78761_2/still.jpg"
+2019-09-23T00:00:00+00:00 DEBUG > > Images set
+2019-09-23T00:00:00+00:00 DEBUG > Finished importing post ID 231.
+2019-09-23T00:00:00+00:00 DEBUG > Row 7 - preparing for import.
+2019-09-23T00:00:00+00:00 DEBUG > > Inserted Raw Term 1.5 ID = 81
+2019-09-23T00:00:00+00:00 DEBUG > > Raw Term SI1 ID = 34
+2019-09-23T00:00:00+00:00 DEBUG > > Raw Term J ID = 61
+2019-09-23T00:00:00+00:00 DEBUG > > Raw Term Very Good ID = 47
+2019-09-23T00:00:00+00:00 DEBUG > > Raw Term IGI ID = 21
+2019-09-23T00:00:00+00:00 DEBUG > > Raw Term Cushion ID = 22
+2019-09-23T00:00:00+00:00 DEBUG > > Raw Term Very Good ID = 31
+2019-09-23T00:00:00+00:00 DEBUG > Inserting 1.01 Carat Cushion Diamond
+2019-09-23T00:00:00+00:00 DEBUG > Inserted - post ID is 233.
+2019-09-23T00:00:00+00:00 DEBUG > > Importing image "https://www.wdlgdia.com/Video_Web/imaged/85563_1/still.jpg"
+2019-09-23T00:00:00+00:00 DEBUG > > Inserted image attachment "https://www.wdlgdia.com/Video_Web/imaged/85563_1/still.jpg"
+2019-09-23T00:00:00+00:00 DEBUG > > Imported image "https://www.wdlgdia.com/Video_Web/imaged/85563_1/still.jpg"
+2019-09-23T00:00:00+00:00 DEBUG > > Images set
+2019-09-23T00:00:00+00:00 DEBUG > Finished importing post ID 233.
+2019-09-23T00:00:00+00:00 DEBUG > Row 8 - preparing for import.
+2019-09-23T00:00:00+00:00 DEBUG > > Inserted Raw Term 1.99 ID = 82
+2019-09-23T00:00:00+00:00 DEBUG > > Raw Term VS2 ID = 27
+2019-09-23T00:00:00+00:00 DEBUG > > Raw Term G ID = 42
+2019-09-23T00:00:00+00:00 DEBUG > > Raw Term Excellent ID = 39
+2019-09-23T00:00:00+00:00 DEBUG > > Raw Term IGI ID = 21
+2019-09-23T00:00:00+00:00 DEBUG > > Raw Term Cushion ID = 22
+2019-09-23T00:00:00+00:00 DEBUG > > Raw Term Very Good ID = 31
+2019-09-23T00:00:00+00:00 DEBUG > Inserting 1.5 Carat Cushion Diamond
+2019-09-23T00:00:00+00:00 DEBUG > Inserted - post ID is 235.
+2019-09-23T00:00:00+00:00 DEBUG > Finished importing post ID 235.
+2019-09-23T00:00:00+00:00 DEBUG > Row 9 - preparing for import.
+2019-09-23T00:00:00+00:00 DEBUG > > Inserted Raw Term 1.51 ID = 83
+2019-09-23T00:00:00+00:00 DEBUG > > Raw Term VS1 ID = 56
+2019-09-23T00:00:00+00:00 DEBUG > > Raw Term J ID = 61
+2019-09-23T00:00:00+00:00 DEBUG > > Raw Term Excellent ID = 39
+2019-09-23T00:00:00+00:00 DEBUG > > Raw Term IGI ID = 21
+2019-09-23T00:00:00+00:00 DEBUG > > Raw Term Cushion ID = 22
+2019-09-23T00:00:00+00:00 DEBUG > > Raw Term Very Good ID = 31
+2019-09-23T00:00:00+00:00 DEBUG > Inserting 1.99 Carat Cushion Diamond
+2019-09-23T00:00:00+00:00 DEBUG > Inserted - post ID is 236.
+2019-09-23T00:00:00+00:00 DEBUG > > Importing image "https://www.wdlgdia.com/Video_Web/imaged/96332_1/still.jpg"
+2019-09-23T00:00:00+00:00 DEBUG > > Error importing image "https://www.wdlgdia.com/Video_Web/imaged/96332_1/still.jpg"
+2019-09-23T00:00:00+00:00 DEBUG > > Error getting remote image
+2019-09-23T00:00:00+00:00 DEBUG > > Images set
+2019-09-23T00:00:00+00:00 DEBUG > Finished importing post ID 236.
+2019-09-23T00:00:00+00:00 DEBUG Finished processing products.

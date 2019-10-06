@@ -1,0 +1,218 @@
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9{
+  padding:0;
+}
+
+table {
+      border-collapse: collapse;
+    }
+    th {
+      background-color: #eee;
+    }
+    th[data-sort]{
+      cursor:pointer;
+    }
+    tr.awesome{
+      color: red;
+    }
+.shape-btn{
+  margin-bottom: 20px;
+    margin-right: 20px;
+  width:6%;
+  display:inline-block;
+}
+
+.selectedShape{
+  border: solid 1px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  width:6%;
+  display:inline-block;
+}
+
+.btn-primary{
+  background-color: #6b8696 !important;
+    border-color: none !important;
+}
+
+.filt{
+  width: 100%;
+}
+
+#table-scroll {
+  height:300px;
+}
+
+#table-wrapper table {
+  width:100%; 
+}
+
+#table-wrapper table thead th .text {
+  position:absolute;   
+  top:-200px;
+  z-index:2;
+  width:35%;
+}
+
+
+
+
+html,body, table { 
+    font-family: 'Gayathri', sans-serif;
+}
+.product-view th{
+  color: black;
+}
+.table td, .table th{
+  padding: .60rem !important;
+}
+.product-view img{
+  max-width: 50%;
+}
+.product-view th{
+  background-color: #e9e9e9 !important;
+  border-radius: 3px;
+}
+.product-view td{
+  background-color: white;
+}
+.ui-tabs{
+  padding:0;
+}
+.ui-tabs .ui-tabs-panel{
+  padding:0;
+}
+.ui-widget.ui-widget-content{
+  border:none;
+}
+.ui-tabs .ui-tabs-nav{
+  padding:0;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover{border:white;background: #5c7084;}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: center !important;
+}
+th{color: white;background-color: rgb(72, 94, 108);}
+
+tr:nth-child(even) {
+  background-color: rgb(205, 217, 224);
+}
+tr:nth-child(even):hover {
+  background-color: #dedede;
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(234, 241, 245);
+}
+tr:nth-child(odd):hover {
+  background-color: #dedede;}
+
+@media (min-width: 1440px) {
+    .container{
+        max-width: 1400px !important;
+    }
+}
+
+
+
+
+ /*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {  }
+
+ /*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {  }
+
+ /*Large devices (desktops, 992px and up)*/
+@media (max-width: 992px) { 
+  .mar{
+    width:16%;
+    margin-left:10px;
+    margin-bottom:30px;
+
+    
+  }
+  
+
+ }
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (max-width: 1000px) { 
+  .product-view-wrapper-diamond{
+    display: none;
+
+  }
+  .col-sm-8{
+   
+    width: 100% !important;
+  }
+  
+  
+
+ }
+
+@media (min-width: 992px){
+  .col-sm-4 {
+width: 32.33333333%;}
+
+.col-lg {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+  padding-left:10px;
+    padding-right:10px;
+}
+}
+
+
+
+
+.noUi-target {
+  margin: 20px;
+  background: transparent;
+  border: none;
+  background: #3f3d38;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 30px;
+  height: 30px;
+background: url("wp-content/uploads/2019/09/button.png");
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.noUi-handle{
+  box-shadow: none;
+}
+.noUi-horizontal .noUi-handle:before,
+.noUi-horizontal .noUi-handle:after {
+  content: '';
+  background: transparent;
+}
+
+.noUi-base {
+  z-index: 1;
+}
+
+.noUi-state-tap .noUi-connect,
+.noUi-state-tap .noUi-origin {
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+.noUi-connects{
+  width:200px
+}
+.container{text-align:center;}

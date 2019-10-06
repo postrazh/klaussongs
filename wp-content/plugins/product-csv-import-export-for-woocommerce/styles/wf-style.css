@@ -1,0 +1,185 @@
+#icon-woocommerce-importer {
+    background-image: url(../images/wf-import.png) !important;
+    background-position: -3px -5px;
+}
+.widefat_importer td {
+    vertical-align: middle;
+    padding: 5px 9px;
+}
+#import-progress {
+    width: 100%;
+}
+#import-progress td, #import-progress th {
+    padding: .5em 1em;
+}
+#import-progress td.status, #import-progress th.status {
+    width: 32px;
+}
+#import-progress td.row, #import-progress th.row {
+    width: 3em;
+    text-align: center;
+}
+#import-progress td.reason, #import-progress th.reason {
+    text-align: right;
+}
+#import-progress tr.importer-loading td {
+    background: url(../images/wf-ajax-loader.gif) no-repeat center center;
+    height: 32px;
+}
+#import-progress .merged td,
+#import-progress .imported td {
+}
+#import-progress .skipped td {
+    border-bottom-color: #dbcb83;
+    background: #f2ecd2;
+}
+#import-progress .failed td {
+    border-bottom-color: #e6adaa;
+    background: #f2d3d2;
+}
+#import-progress mark.result {
+    height: 0;
+    display: block;
+    line-height: 16px;
+    overflow: hidden;
+    padding: 16px 0 0 0;
+}
+#import-progress .skipped mark.result {
+    background: url(../images/wf-notice.png) no-repeat center top;
+}
+#import-progress .merged mark.result,
+#import-progress .imported mark.result {
+    background: url(../images/wf-success.png) no-repeat center top;
+}
+#import-progress .failed mark.result {
+    background: url(../images/wf-failed.png) no-repeat center top;
+}
+#import-progress .complete td {
+    background: #000;
+    border-color: #000;
+    border-top: 4px solid #000;
+    color: #fff;
+    font-size: 1.5em;
+    padding: .95em 1em 1em;
+    text-align: center;
+}
+#import-progress .regenerating td {
+    padding: 0;
+}
+#import-progress .regenerating div.progress {
+    background: #464646;
+    padding: .95em 1em 1em;
+    color: #fff;
+    overflow: hidden;
+    width: 0;
+    float: left;
+    text-align: left;
+    white-space: nowrap;
+}
+.update{
+    background: #fff;
+    border-left: 4px solid #fff;
+    padding: 1px 12px;
+    border-left-color: #46b450;
+    margin-top: 10px;
+}
+#datagrid  { border-collapse: collapse; text-align: left; width: 100%; }
+#datagrid {
+    background: #fff; overflow: hidden; 
+}
+#datagrid  td{ padding: 3px 10px; }
+#datagrid  th { padding: 3px 25px; color: #fff; background-color: #ccc; font-weight: bold;font-size: 15px; }
+
+.woocommerce-message a.button-primary, .woocommerce-message button.button-primary{
+    background: #0085ba none repeat scroll 0 0 !important;
+    border-color: #0073aa #006799 #006799 !important;}
+.woocommerce-message{border-left-color:#46b450 !important;}
+
+.tool-box{
+    margin: 5px 0 15px;
+}
+.tool-box.bg-white{
+    background: #fff;
+}
+.tool-box.p-20p{
+    padding: 20px;
+}
+.tool-box #datagrid td input[type=text]{
+    width: 100% !important;
+}
+.aw-title{
+    font-size: 14px;
+    padding: 8px 0px;
+    margin: 0;
+    line-height: 1.4;
+    border-bottom: 1px solid #eee;
+}
+.form-table td{
+    padding: 15px 0px !important;
+}
+
+
+
+.licence-tab .actived{
+    color: green;
+    font-size: 12px;
+    padding-left: 5px;
+}
+.licence-tab .deactived{
+    color: red;
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+
+
+/* batch export start */
+.wt-pipe-batch-exporter-wrapper .wt-batch-exporter.wt-batch-exporter-exporting progress{
+    display: block;
+}
+.wt-pipe-batch-exporter-wrapper .wt-batch-exporter progress{
+    width: 100%;
+    height: 42px;
+    margin: 0 auto 24px;
+    display: block;
+    -webkit-appearance: none;
+    border: none;
+    display: none;
+    background: #f5f5f5;
+    border: 2px solid #eee;
+    border-radius: 4px;
+    padding: 0;
+    box-shadow: 0 1px 0 0 rgba(255,255,255,.2);
+    }
+    
+.wt-pipe-batch-exporter-wrapper .wt-batch-exporter.wt-batch-exporter-exporting .spinner{
+      display: block;  
+
+} 
+    
+.wt-pipe-batch-exporter-wrapper .wt-batch-exporter.wt-batch-exporter-exporting .wt-batch-exporter-options{
+    display: none;
+}   
+    
+/*.spinner{display:none}*/
+
+progress {
+	height: 15px;
+	border: 0px none;
+	background-color: grey;
+	color: red;
+}
+
+progress::-webkit-progress-bar {  
+	background-color: grey;
+}  
+progress::-webkit-progress-value {  
+	background-color: #beb1e1;
+}  
+
+progress::-moz-progress-bar {  
+	background-color: #beb1e1;
+}  
+
+
+/* batch export end */

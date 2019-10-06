@@ -1,0 +1,1340 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: th\n"
+"POT-Creation-Date: 2017-10-04 11:11+0530\n"
+"PO-Revision-Date: 2017-10-04 11:33+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: th\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.12\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: lang\n"
+"X-Poedit-SearchPathExcluded-1: styles\n"
+"X-Poedit-SearchPathExcluded-2: js\n"
+
+#: includes/class-wf-pr_revimpexpcsv-admin-screen.php:29
+msgid "Export"
+msgstr "ส่งออก"
+
+#: includes/class-wf-pr_revimpexpcsv-admin-screen.php:38
+msgid "Download to CSV"
+msgstr "ดาวน์โหลดเป็น CSV"
+
+#: includes/class-wf-pr_revimpexpcsv-admin-screen.php:46
+msgid "You do not have sufficient permissions to access this page."
+msgstr "คุณไม่มีสิทธิ์เพียงพอในการเข้าถึงหน้านี้"
+
+#: includes/class-wf-pr_revimpexpcsv-admin-screen.php:63
+#: includes/class-wf-prodimpexpcsv-admin-screen.php:25
+msgid ""
+"Product CSV Import Export requires the function <code>mb_detect_encoding</"
+"code> to import and export CSV files. Please ask your hosting provider to "
+"enable this function."
+msgstr ""
+"ผลิตภัณฑ์ CSV นำเข้าส่งออกต้องใช้ฟังก์ชัน <code>mb_detect_encoding</code> เพื่อนำเข้า "
+"และส่งออกไฟล์ CSV กรุณาสอบถามผู้ให้บริการโฮสต์ของคุณเพื่อเปิดใช้งานฟังก์ชันนี้"
+
+#: includes/class-wf-pr_revimpexpcsv-admin-screen.php:71
+msgid "Product Reviews Im-Ex"
+msgstr "ผลิตภัณฑ์จาก Im-Ex"
+
+#: includes/class-wf-pr_revimpexpcsv-admin-screen.php:145
+msgid "Download as CSV"
+msgstr "ดาวน์โหลดเป็น CSV"
+
+#: includes/class-wf-pr_revimpexpcsv-ajax-handler.php:36
+#: includes/class-wf-prodimpexpcsv-ajax-handler.php:37
+#, php-format
+msgid "Failed resize: %s is an invalid image ID."
+msgstr "ไม่สามารถปรับขนาด: %s เป็นตัวรหัสภาพไม่ถูกต้อง"
+
+#: includes/class-wf-pr_revimpexpcsv-ajax-handler.php:39
+#: includes/class-wf-prodimpexpcsv-ajax-handler.php:40
+msgid "Your user account doesn't have permission to resize images"
+msgstr "บัญชีผู้ใช้ของคุณไม่มีสิทธิ์ในการปรับขนาดภาพ"
+
+#: includes/class-wf-pr_revimpexpcsv-ajax-handler.php:44
+#: includes/class-wf-prodimpexpcsv-ajax-handler.php:45
+#, php-format
+msgid "The originally uploaded image file cannot be found at %s"
+msgstr "ไม่พบไฟล์ภาพอัพโหลดเดิมที่ %s"
+
+#: includes/class-wf-pr_revimpexpcsv-ajax-handler.php:53
+#: includes/class-wf-prodimpexpcsv-ajax-handler.php:54
+msgid "Unknown failure reason."
+msgstr "เหตุผลที่ไม่รู้จักความล้มเหลว"
+
+#: includes/class-wf-pr_revimpexpcsv-ajax-handler.php:58
+#: includes/class-wf-prodimpexpcsv-ajax-handler.php:59
+#, php-format
+msgid "&quot;%1$s&quot; (ID %2$s) was successfully resized in %3$s seconds."
+msgstr ""
+
+#: includes/class-wf-pr_revimpexpcsv-ajax-handler.php:65
+#: includes/class-wf-prodimpexpcsv-ajax-handler.php:66
+#, php-format
+msgid ""
+"&quot;%1$s&quot; (ID %2$s) failed to resize. The error message was: %3$s"
+msgstr "\"%1$s\" (ID %2$s) ไม่สามารถปรับขนาด แก้ไขข้อผิดพลาด: %3$s"
+
+#: includes/class-wf-pr_revimpexpcsv-cron.php:25
+#: includes/class-wf-pr_revimpexpcsv-import-cron.php:29
+#: includes/class-wf-prodimpexpcsv-cron.php:25
+#: includes/class-wf-prodimpexpcsv-import-cron.php:29
+#, php-format
+msgid "Every %d minutes"
+msgstr "ทุก %d นาที"
+
+#: includes/class-wf-pr_revimpexpcsv-import-cron.php:88
+#: includes/class-wf-prodimpexpcsv-import-cron.php:89
+msgid "Failed processing import. Reason:"
+msgstr "การนำเข้าการประมวลผลล้มเหลว เหตุผล:"
+
+#: includes/class-wf-pr_revimpexpcsv-import-cron.php:103
+#: includes/class-wf-prodimpexpcsv-import-cron.php:108
+msgid "Fetching file failed. Reason:"
+msgstr "ดึงข้อมูลแฟ้มล้มเหลว เหตุผล:"
+
+#: includes/class-wf-pr_revimpexpcsv-system-status-tools.php:22
+msgid "Delete Product Reviews"
+msgstr "ลบรีวิวสินค้า"
+
+#: includes/class-wf-pr_revimpexpcsv-system-status-tools.php:23
+msgid "Delete ALL Product Reviews"
+msgstr "ลบรีวิวสินค้าทั้งหมด"
+
+#: includes/class-wf-pr_revimpexpcsv-system-status-tools.php:24
+msgid "This tool will delete all product reviews allowing you to start fresh."
+msgstr "เครื่องมือนี้จะลบทุกความคิดเห็นผลิตภัณฑ์ที่ช่วยให้คุณสามารถเริ่มต้นใหม่"
+
+#: includes/class-wf-pr_revimpexpcsv-system-status-tools.php:38
+msgid "All Reviews Deleted"
+msgstr "ความคิดเห็นทั้งหมดที่ถูกลบ"
+
+#: includes/class-wf-prodimpexpcsv-admin-screen.php:33
+msgid "Product Im-Ex"
+msgstr "ผลิตภัณฑ์ Im-Ex"
+
+#: includes/class-wf-prodimpexpcsv-admin-screen.php:94
+msgid "Download Products as CSV"
+msgstr "ดาวน์โหลดผลิตภัณฑ์เป็น CSV"
+
+#: includes/class-wf-prodimpexpcsv-system-status-tools.php:22
+msgid "Delete Products"
+msgstr "ลบผลิตภัณฑ์"
+
+#: includes/class-wf-prodimpexpcsv-system-status-tools.php:23
+msgid "Delete ALL products"
+msgstr "ลบผลิตภัณฑ์ทั้งหมด"
+
+#: includes/class-wf-prodimpexpcsv-system-status-tools.php:24
+msgid "This tool will delete all products allowing you to start fresh."
+msgstr "เครื่องมือนี้จะลบผลิตภัณฑ์ทั้งหมดที่ช่วยให้คุณสามารถเริ่มต้นใหม่"
+
+#: includes/class-wf-prodimpexpcsv-system-status-tools.php:28
+msgid "Delete Variations"
+msgstr "ลบรูปแบบ"
+
+#: includes/class-wf-prodimpexpcsv-system-status-tools.php:29
+msgid "Delete ALL variations"
+msgstr "ลบรูปแบบทั้งหมด"
+
+#: includes/class-wf-prodimpexpcsv-system-status-tools.php:30
+msgid "This tool will delete all variations allowing you to start fresh."
+msgstr "เครื่องมือนี้จะลบทุกรูปแบบที่ช่วยให้คุณสามารถเริ่มต้นใหม่"
+
+#: includes/class-wf-prodimpexpcsv-system-status-tools.php:34
+msgid "Delete Orphans"
+msgstr "ลบเด็กกำพร้า"
+
+#: includes/class-wf-prodimpexpcsv-system-status-tools.php:35
+msgid "Delete orphaned variations"
+msgstr "ลบรูปแบบที่ถูกละเลย"
+
+#: includes/class-wf-prodimpexpcsv-system-status-tools.php:36
+msgid "This tool will delete variations which have no parent."
+msgstr "เครื่องมือนี้จะลบการเปลี่ยนแปลงที่มีหลักไม่"
+
+#: includes/class-wf-prodimpexpcsv-system-status-tools.php:62
+#, php-format
+msgid "%d Products Deleted"
+msgstr "ลบผลิตภัณฑ์ %d"
+
+#: includes/class-wf-prodimpexpcsv-system-status-tools.php:84
+#: includes/class-wf-prodimpexpcsv-system-status-tools.php:99
+#, php-format
+msgid "%d Variations Deleted"
+msgstr "ลบรูปแบบ %d"
+
+#: includes/exporter/data/data-wf-allowed-products.php:8
+msgid "Simple product"
+msgstr "สินค้าทั่วไป"
+
+#: includes/exporter/data/data-wf-allowed-products.php:9
+msgid "Grouped product"
+msgstr "กลุ่มผลิตภัณฑ์"
+
+#: includes/exporter/data/data-wf-allowed-products.php:10
+msgid "External/Affiliate product"
+msgstr "ผลิตภัณฑ์ภายนอก/พันธมิตร"
+
+#: includes/exporter/data/data-wf-allowed-products.php:11
+msgid "Variable product"
+msgstr "ตัวแปรสินค้า"
+
+#: includes/importer/class-wf-csv-parser-review.php:170
+#: includes/importer/class-wf-csv-parser.php:286
+#, php-format
+msgid "> Row %s - preparing for merge."
+msgstr "> แถว %s - เตรียมความพร้อมสำหรับการผสาน"
+
+#: includes/importer/class-wf-csv-parser-review.php:175
+msgid "> > Cannot merge without id. Importing instead."
+msgstr "อ่านไม่สามารถผสานไม่ id การนำเข้าแทน"
+
+#: includes/importer/class-wf-csv-parser-review.php:192
+#, php-format
+msgid "> > Skipped. Cannot find product reviews with ID %s. Importing instead."
+msgstr "อ่านข้ามไป ไม่พบรีวิวผลิตภัณฑ์ ด้วย ID %s ได้นำเข้าแทนได้"
+
+#: includes/importer/class-wf-csv-parser-review.php:199
+#, php-format
+msgid "> > Found product reviews with ID %s."
+msgstr "อ่านพบบทวิจารณ์ผลิตภัณฑ์ ด้วย ID %s"
+
+#: includes/importer/class-wf-csv-parser-review.php:209
+#: includes/importer/class-wf-csv-parser.php:329
+#, php-format
+msgid "> Row %s - preparing for import."
+msgstr "> แถว %s - เตรียมความพร้อมสำหรับการนำเข้า"
+
+#: includes/importer/class-wf-csv-parser-review.php:214
+msgid "> > Skipped. No comment content set for new product reviews."
+msgstr "อ่านข้ามไป ความคิดเห็นความคิดเห็นเนื้อหาตั้งสำหรับผลิตภัณฑ์ใหม่"
+
+#: includes/importer/class-wf-csv-parser-review.php:215
+msgid "No comment content set for new product reviews."
+msgstr "ความคิดเห็นความคิดเห็นเนื้อหาตั้งสำหรับผลิตภัณฑ์ใหม่"
+
+#: includes/importer/class-wf-csv-parser-review.php:219
+msgid ""
+"> > Skipped. No post(product) id found, for which new comment is to be "
+"imported"
+msgstr "อ่านข้ามไป พบว่าไม่มีรหัส post(product) ซึ่งจะนำข้อคิดเห็นใหม่"
+
+#: includes/importer/class-wf-csv-parser-review.php:220
+msgid "No post(product) id found, for which new comment is to be imported."
+msgstr "ไม่มีรหัส post(product) พบ ซึ่งจะนำข้อคิดเห็นใหม่"
+
+#: includes/importer/class-wf-csv-parser.php:291
+msgid "> > Cannot merge without id or sku. Importing instead."
+msgstr "อ่านไม่สามารถผสาน โดย id หรือ sku การนำเข้าแทน"
+
+#: includes/importer/class-wf-csv-parser.php:311
+#, php-format
+msgid "> > Skipped. Cannot find product with sku %s. Importing instead."
+msgstr "อ่านข้ามไป ไม่พบผลิตภัณฑ์ที่ มี sku %s ได้นำเข้าแทนได้"
+
+#: includes/importer/class-wf-csv-parser.php:318
+#, php-format
+msgid "> > Found product with ID %s."
+msgstr "อ่านพบผลิตภัณฑ์ ด้วย ID %s"
+
+#: includes/importer/class-wf-csv-parser.php:333
+msgid "> > Skipped. No post_title set for new product."
+msgstr "อ่านข้ามไป ไม่ post_title ที่ตั้งสำหรับผลิตภัณฑ์ใหม่"
+
+#: includes/importer/class-wf-csv-parser.php:334
+msgid "No post_title set for new product."
+msgstr "ไม่ post_title ที่ตั้งสำหรับผลิตภัณฑ์ใหม่"
+
+#: includes/importer/class-wf-csv-parser.php:337
+msgid "> > Skipped. No parent set for new variation product."
+msgstr "อ่านข้ามไป ผู้ปกครองไม่ตั้งสำหรับผลิตภัณฑ์รูปแบบใหม่"
+
+#: includes/importer/class-wf-csv-parser.php:339
+msgid "No parent set for new variation product."
+msgstr "ผู้ปกครองไม่ตั้งสำหรับผลิตภัณฑ์รูปแบบใหม่"
+
+#: includes/importer/class-wf-csv-parser.php:577
+#, php-format
+msgid "> > Skipping taxonomy \"%s\" - it does not exist."
+msgstr "อ่านข้ามระบบภาษี \"%s\" - มันไม่ได้อยู่"
+
+#: includes/importer/class-wf-csv-parser.php:586
+#, php-format
+msgid "> > > Product type \"%s\" not allowed - using simple."
+msgstr ">>> ผลิตภัณฑ์ประเภท \"%s\" ไม่ - ใช้ง่าย"
+
+#: includes/importer/class-wf-csv-parser.php:640
+#: includes/importer/class-wf-csv-parser.php:665
+msgid "> > ("
+msgstr "> > ("
+
+#: includes/importer/class-wf-csv-parser.php:706
+#: includes/importer/class-wf-csv-parser.php:812
+#, php-format
+msgid "> > Failed to import term %s %s"
+msgstr "Failed to import %s %s"
+
+#: includes/importer/class-wf-csv-parser.php:755
+#, php-format
+msgid "> > Attribute taxonomy \"%s\" does not exist. Adding it. Nicename: %s"
+msgstr "อ่านไม่มีแอตทริบิวต์ระบบภาษี \"%s\" เพิ่มมัน Nicename: %s"
+
+#: includes/importer/class-wf-csv-parser.php:763
+#, php-format
+msgid "> > Attribute taxonomy %s already exists in DB."
+msgstr "อ่านแอตทริบิวต์ระบบภาษี %s อยู่แล้วในฐานข้อมูล"
+
+#: includes/importer/class-wf-csv-parser.php:810
+#, php-format
+msgid "> > Inserted Raw Term %s ID = %s"
+msgstr "อ่านแทรกคำดิบ %s ID = %s"
+
+#: includes/importer/class-wf-csv-parser.php:816
+#, php-format
+msgid "> > Raw Term %s ID = %s"
+msgstr "อ่านระยะดิบ %s ID = %s"
+
+#: includes/importer/class-wf-pr_revimpexpcsv-import.php:144
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:136
+msgid "Row"
+msgstr "แถว"
+
+#: includes/importer/class-wf-pr_revimpexpcsv-import.php:145
+msgid "ID"
+msgstr "ID"
+
+#: includes/importer/class-wf-pr_revimpexpcsv-import.php:146
+msgid "Product Review ID"
+msgstr "รหัสสินค้ารีวิว"
+
+#: includes/importer/class-wf-pr_revimpexpcsv-import.php:147
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:139
+msgid "Status Msg"
+msgstr "ข่าวสารเกี่ยวกับสถานะ"
+
+#: includes/importer/class-wf-pr_revimpexpcsv-import.php:240
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:232
+msgid "AJAX Error"
+msgstr "ข้อผิดพลาดของ AJAX"
+
+#: includes/importer/class-wf-pr_revimpexpcsv-import.php:340
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:332
+#, php-format
+msgid ""
+"The resize request was abnormally terminated (ID %s). This is likely due to "
+"the image exceeding available memory or some other type of fatal error."
+msgstr ""
+"ขอปรับขนาดได้อย่างผิดปกติ (ID %s) สิ้นสุดลง "
+"นี้น่าจะเกิดจากภาพที่เกินหน่วยความจำหรือความผิดพลาดร้ายแรงชนิดอื่น"
+
+#: includes/importer/class-wf-pr_revimpexpcsv-import.php:345
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:337
+msgid "thumbnails regenerated"
+msgstr "รูปขนาดย่อที่สร้างใหม่"
+
+#: includes/importer/class-wf-pr_revimpexpcsv-import.php:383
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:375
+msgid "Error finding uploaded file!"
+msgstr "ค้นหาข้อผิดพลาดการอัปโหลดแฟ้ม"
+
+#: includes/importer/class-wf-pr_revimpexpcsv-import.php:453
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:445
+msgid "Step 1..."
+msgstr "ขั้นตอนที่ 1"
+
+#: includes/importer/class-wf-pr_revimpexpcsv-import.php:458
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:450
+msgid "Step 2..."
+msgstr "ขั้นตอนที่ 2"
+
+#: includes/importer/class-wf-pr_revimpexpcsv-import.php:473
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:465
+msgid "Finalizing..."
+msgstr "กำลังจบ"
+
+#: includes/importer/class-wf-pr_revimpexpcsv-import.php:477
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:488
+msgid "Finished. Import complete."
+msgstr "เสร็จแล้ว นำเข้าเสร็จสมบูรณ์"
+
+#: includes/importer/class-wf-pr_revimpexpcsv-import.php:547
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:558
+msgid ""
+"Columns are pre-selected using the Mapping file: \"<b style=\"color:gray\">"
+msgstr "คอลัมน์ก่อนเลือกใช้แฟ้มการแมป: \"<b style=\"color:gray\"></b>"
+
+#: includes/importer/class-wf-pr_revimpexpcsv-import.php:567
+msgid "Processing product reviews."
+msgstr "รีวิวผลิตภัณฑ์การประมวลผล"
+
+#: includes/importer/class-wf-pr_revimpexpcsv-import.php:578
+msgid "Finished processing product reviews."
+msgstr "เสร็จสิ้นการประมวลผลรีวิวสินค้า"
+
+#: includes/importer/class-wf-pr_revimpexpcsv-import.php:598
+msgid "Parsing product reviews CSV."
+msgstr "รีวิวผลิตภัณฑ์แยกวิเคราะห์ CSV"
+
+#: includes/importer/class-wf-pr_revimpexpcsv-import.php:603
+msgid "Finished parsing product reviews CSV."
+msgstr "ผลิตภัณฑ์สำเร็จรูปแยกวิเคราะห์ความคิดเห็น CSV"
+
+#: includes/importer/class-wf-pr_revimpexpcsv-import.php:644
+#: includes/importer/class-wf-pr_revimpexpcsv-import.php:661
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:670
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:687
+msgid "Sorry, there has been an error."
+msgstr "Sorry, there has been an error."
+
+#: includes/importer/class-wf-pr_revimpexpcsv-import.php:700
+msgid "Product review already processed"
+msgstr ""
+
+#: includes/importer/class-wf-pr_revimpexpcsv-import.php:701
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:814
+msgid "> Post ID already processed. Skipping."
+msgstr "> ลงรหัสแล้วประมวลผล ข้าม"
+
+#: includes/importer/class-wf-pr_revimpexpcsv-import.php:707
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:820
+msgid "Skipping auto-draft"
+msgstr "ข้ามร่างอัตโนมัติ"
+
+#: includes/importer/class-wf-pr_revimpexpcsv-import.php:708
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:821
+msgid "> Skipping auto-draft."
+msgstr "> ข้ามอัตโนมัติแบบร่าง"
+
+#: includes/importer/class-wf-pr_revimpexpcsv-import.php:719
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:835
+#, php-format
+msgid "> &#8220;%s&#8221;"
+msgstr "> &#8220; %s &#8221;"
+
+#: includes/importer/class-wf-pr_revimpexpcsv-import.php:731
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:861
+#, php-format
+msgid "> Merging post ID %s."
+msgstr "> ผสาน ID โพสต์ %s"
+
+#: includes/importer/class-wf-pr_revimpexpcsv-import.php:780
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:961
+#, php-format
+msgid "> Inserting %s"
+msgstr "> %s แทรก"
+
+#: includes/importer/class-wf-pr_revimpexpcsv-import.php:822
+msgid "Failed to import product review"
+msgstr "ไม่สามารถนำเข้าสินค้ารีวิว"
+
+#: includes/importer/class-wf-pr_revimpexpcsv-import.php:823
+#, php-format
+msgid "Failed to import product review &#8220;%s&#8221;"
+msgstr "ไม่สามารถนำเข้ารีวิวผลิตภัณฑ์ &#8220; %s &#8221;"
+
+#: includes/importer/class-wf-pr_revimpexpcsv-import.php:829
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:997
+#, php-format
+msgid "> Inserted - post ID is %s."
+msgstr "> แทรก - ID โพสต์คือ %s"
+
+#: includes/importer/class-wf-pr_revimpexpcsv-import.php:857
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:1222
+#, php-format
+msgid "> Finished merging post ID %s."
+msgstr "> เสร็จรวม ID โพสต์ %s"
+
+#: includes/importer/class-wf-pr_revimpexpcsv-import.php:860
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:1225
+#, php-format
+msgid "> Finished importing post ID %s."
+msgstr "> เสร็จนำเข้า ID โพสต์ %s"
+
+#: includes/importer/class-wf-pr_revimpexpcsv-import.php:940
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:1393
+msgid "Zero size file downloaded"
+msgstr "Zero size file downloaded"
+
+#: includes/importer/class-wf-pr_revimpexpcsv-import.php:1027
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:1515
+msgid "Import"
+msgstr "นำเข้า"
+
+#: includes/importer/class-wf-pr_revimpexpcsv-import.php:1027
+msgid "Merge Product Reviews"
+msgstr "รวมรีวิวสินค้า"
+
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:111
+msgid "Error with handle_upload!"
+msgstr "ข้อผิดพลาดกับ handle_upload"
+
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:137
+msgid "SKU"
+msgstr "SKU/รหัสสินค้า"
+
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:138
+msgid "Product"
+msgstr "ผลิตภัณฑ์"
+
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:471
+msgid "Linking upsells..."
+msgstr "การเชื่อมโยง upsells ..."
+
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:480
+msgid "Linking crosssells..."
+msgstr "การเชื่อมโยง crosssells ..."
+
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:592
+msgid "Processing products."
+msgstr "การประมวลผลผลิตภัณฑ์"
+
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:603
+msgid "Finished processing products."
+msgstr "เสร็จสิ้นการประมวลผลผลิตภัณฑ์"
+
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:623
+msgid "Parsing products CSV."
+msgstr "แยกวิเคราะห์ผลิตภัณฑ์ CSV"
+
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:628
+msgid "Finished parsing products CSV."
+msgstr "เสร็จแล้วแยกวิเคราะห์ผลิตภัณฑ์ CSV"
+
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:813
+msgid "Product already processed"
+msgstr "ผลิตภัณฑ์ที่ประมวลผลแล้ว"
+
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:841
+msgid "Importing post ID conflicts with an existing post ID"
+msgstr "นำเข้าโพสต์รหัสขัดแย้งกับ ID โพสต์ที่มีอยู่"
+
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:842
+#, php-format
+msgid "> &#8220;%s&#8221; ID already exists."
+msgstr "> &#8220; %s &#8221; ID อยู่แล้ว"
+
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:850
+msgid "Post is not a product"
+msgstr "โพสต์ไม่เป็นผลิตภัณฑ์"
+
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:851
+#, php-format
+msgid "> &#8220;%s&#8221; is not a product."
+msgstr "> &#8220; %s &#8221; เป็นผลิตภัณฑ์ไม่"
+
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:927
+msgid "Failed to update product"
+msgstr "ไม่สามารถปรับปรุงผลิตภัณฑ์"
+
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:928
+#, php-format
+msgid "> Failed to update product %s"
+msgstr "> ล้มเหลวในการปรับปรุงผลิตภัณฑ์ %s"
+
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:932
+msgid "> Merged post data: "
+msgstr "> ผสานลงข้อมูล:"
+
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:981
+msgid "Skipped New Product"
+msgstr "ผลิตภัณฑ์ใหม่ที่ถูกข้าม"
+
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:990
+msgid "Failed to import product"
+msgstr "ไม่สามารถนำเข้าสินค้า"
+
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:991
+#, php-format
+msgid "Failed to import product &#8220;%s&#8221;"
+msgstr "ไม่สามารถนำเข้าผลิตภัณฑ์ &#8220; %s &#8221;"
+
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:1102
+#, php-format
+msgid "> > Image exists - skipping %s"
+msgstr "อ่านภาพที่มีอยู่ - ข้าม %s"
+
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:1132
+#, php-format
+msgid "> > Importing image \"%s\""
+msgstr "อ่านนำภาพ \"%s\""
+
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:1147
+#, php-format
+msgid "> > Imported image \"%s\""
+msgstr "อ่านนำภาพ \"%s\""
+
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:1162
+#, php-format
+msgid "> > Error importing image \"%s\""
+msgstr "อ่านข้อผิดพลาดการนำเข้าภาพ \"%s\""
+
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:1169
+msgid "> > Images set"
+msgstr "อ่านภาพตั้ง"
+
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:1291
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:1315
+msgid "Invalid file type"
+msgstr "รูปแบบไฟล์ไม่ถูกต้อง"
+
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:1298
+msgid "Local image did not exist!"
+msgstr "รูปภายในเครื่องไม่มี"
+
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:1328
+#, php-format
+msgid "> > Inserted image attachment \"%s\""
+msgstr "อ่านแทรกภาพแนบ \"%s\""
+
+#: includes/importer/class-wf-prodimpexpcsv-product-import.php:1515
+msgid "Merge Products"
+msgstr "รวมผลิตภัณฑ์"
+
+#: includes/importer/views/html-wf-import-greeting-review.php:20
+msgid ""
+"You can import product reviews (in CSV format) in to the shop using any of "
+"below methods."
+msgstr "คุณสามารถนำรีวิวสินค้า (ในรูปแบบ CSV) ในการร้านใช้ใด ๆ ของวิธี"
+
+#: includes/importer/views/html-wf-import-greeting-review.php:23
+#: includes/importer/views/html-wf-import-greeting.php:24
+msgid ""
+"Before you can upload your import file, you will need to fix the following "
+"error:"
+msgstr "ก่อนที่คุณสามารถอัปโหลดแฟ้มการนำเข้า คุณจะต้องแก้ไขข้อผิดพลาดต่อไปนี้:"
+
+#: includes/importer/views/html-wf-import-greeting-review.php:31
+#: includes/importer/views/html-wf-import-greeting.php:32
+msgid "Method 1: Select a file from your computer"
+msgstr "วิธีที่ 1: เลือกไฟล์จากคอมพิวเตอร์ของคุณ"
+
+#: includes/importer/views/html-wf-import-greeting-review.php:37
+#: includes/importer/views/html-wf-import-greeting.php:38
+#, php-format
+msgid "Maximum size: %s"
+msgstr "ขนาดสูงสุด: %s"
+
+#: includes/importer/views/html-wf-import-greeting-review.php:43
+#: includes/importer/views/html-wf-import-greeting.php:62
+msgid "Method 2: Provide FTP Details:"
+msgstr "วิธีที่ 2: ให้รายละเอียดของ FTP:"
+
+#: includes/importer/views/html-wf-import-greeting-review.php:49
+msgid "Enable FTP import"
+msgstr "เปิดใช้งาน FTP นำเข้า"
+
+#: includes/importer/views/html-wf-import-greeting-review.php:57
+#: includes/importer/views/html-wf-import-greeting.php:76
+#: includes/views/settings/html-wf-settings-products.php:92
+#: includes/views/settings/html-wf-settings-products.php:276
+msgid "FTP Server Host/IP"
+msgstr "FTP เซิร์ฟเวอร์ โฮสต์/IP"
+
+#: includes/importer/views/html-wf-import-greeting-review.php:60
+#: includes/importer/views/html-wf-import-greeting.php:79
+msgid "XXX.XXX.XXX.XXX"
+msgstr "XXX.XXX.XXX.XXX"
+
+#: includes/importer/views/html-wf-import-greeting-review.php:65
+#: includes/importer/views/html-wf-import-greeting.php:84
+#: includes/views/settings/html-wf-settings-products.php:100
+#: includes/views/settings/html-wf-settings-products.php:284
+msgid "FTP User Name"
+msgstr "ชื่อผู้ใช้ FTP"
+
+#: includes/importer/views/html-wf-import-greeting-review.php:73
+#: includes/importer/views/html-wf-import-greeting.php:92
+#: includes/views/settings/html-wf-settings-products.php:108
+#: includes/views/settings/html-wf-settings-products.php:292
+msgid "FTP Password"
+msgstr "รหัสผ่าน FTP"
+
+#: includes/importer/views/html-wf-import-greeting-review.php:81
+#: includes/importer/views/html-wf-import-greeting.php:100
+msgid "FTP Server Path"
+msgstr "เซิร์ฟเวอร์ FTP"
+
+#: includes/importer/views/html-wf-import-greeting-review.php:90
+#: includes/importer/views/html-wf-import-greeting.php:109
+#: includes/views/settings/html-wf-settings-products.php:116
+#: includes/views/settings/html-wf-settings-products.php:300
+msgid "Use FTPS"
+msgstr "ใช้ FTPS"
+
+#: includes/importer/views/html-wf-import-greeting-review.php:105
+#: includes/importer/views/html-wf-import-greeting.php:47
+#: includes/views/settings/html-wf-settings-products.php:237
+#: includes/views/settings/html-wf-settings-products.php:392
+msgid "Select a mapping file."
+msgstr "เลือกแฟ้มการแมป"
+
+#: includes/importer/views/html-wf-import-greeting-review.php:119
+#: includes/importer/views/html-wf-import-greeting.php:119
+#: includes/views/export/html-wf-export-product-reviews.php:93
+#: includes/views/export/html-wf-export-products.php:69
+msgid "Delimiter"
+msgstr "à¸à¸£à¸­à¸à¸à¹à¸­à¸à¸§à¸²à¸¡:"
+
+#: includes/importer/views/html-wf-import-greeting.php:21
+msgid ""
+"You can import products (in CSV format) in to the shop using any of below "
+"methods."
+msgstr "คุณสามารถนำเข้าสินค้า (ในรูปแบบ CSV) ในร้านใช้ใด ๆ ของวิธีการ"
+
+#: includes/importer/views/html-wf-import-greeting.php:68
+msgid "Enable FTP import/export"
+msgstr "เปิดใช้งาน FTP นำเข้าและส่งออก"
+
+#: includes/importer/views/html-wf-import-greeting.php:123
+msgid "Merge empty cells"
+msgstr "ผสานเซลล์ว่าง"
+
+#: includes/importer/views/html-wf-import-greeting.php:124
+msgid ""
+"Check this box to merge empty cells - otherwise (when merging) the empty "
+"cells will be ignored when importing things such as attributes."
+msgstr ""
+"ช่องนี้เพื่อผสานเซลล์ว่าง - มิฉะนั้น (เมื่อผสาน) เซลล์ว่างจะถูกละเว้นเมื่อนำสิ่งที่เป็นคุณลักษณะ"
+
+#: includes/importer/views/html-wf-import-greeting.php:129
+msgid "Upload file and import"
+msgstr "อัปโหลดแฟ้ม และนำเข้า"
+
+#: includes/importer/views/html-wf-import-options-review.php:7
+#: includes/importer/views/html-wf-import-options.php:7
+msgid "Map Fields"
+msgstr "แมปเขตข้อมูล"
+
+#: includes/importer/views/html-wf-import-options-review.php:9
+#: includes/importer/views/html-wf-import-options.php:9
+msgid "Mapping file name:"
+msgstr "การแมปชื่อแฟ้ม:"
+
+#: includes/importer/views/html-wf-import-options-review.php:13
+#: includes/importer/views/html-wf-import-options.php:13
+msgid "Here you can map your imported columns to product data fields."
+msgstr "ที่นี่คุณสามารถแมปคอลัมน์ของคุณนำเข้าฟิลด์ข้อมูลผลิตภัณฑ์"
+
+#: includes/importer/views/html-wf-import-options-review.php:17
+#: includes/importer/views/html-wf-import-options.php:17
+msgid "Map to"
+msgstr "แผนที่"
+
+#: includes/importer/views/html-wf-import-options-review.php:18
+#: includes/importer/views/html-wf-import-options.php:18
+msgid "Column Header"
+msgstr "จำนวนที่สอง"
+
+#: includes/importer/views/html-wf-import-options-review.php:19
+#: includes/importer/views/html-wf-import-options.php:19
+msgid "Evaluation Field"
+msgstr "ฟิลด์การประเมินผล"
+
+#: includes/importer/views/html-wf-import-options-review.php:21
+msgid ""
+"Assign constant value HikeFoce to comment_author:</br>=HikeFoce</br>Append a "
+"value By HikeFoce to comments_content:</br>&By HikeFoce</br>Prepend a value "
+"HikeFoce to comments_content:</br>&HikeFoce [VAL]."
+msgstr ""
+"กำหนดค่าคง HikeFoce comment_author:<br>= HikeFoce</br>ผนวกค่าโดย HikeFoce "
+"comments_content:<br>และ โดย HikeFoce</br>เนื้อค่า HikeFoce เพื่อ "
+"comments_content:<br>และ HikeFoce [วาล]"
+
+#: includes/importer/views/html-wf-import-options-review.php:55
+#: includes/importer/views/html-wf-import-options.php:121
+msgid "Do not import"
+msgstr "ไม่นำเข้า"
+
+#: includes/importer/views/html-wf-import-options.php:21
+msgid ""
+"Assign constant value HikeFoce to post_author:</br>=HikeFoce</br>Add $5 to "
+"Price:sale_price:</br>+5</br>Reduce $5 to Price:sale_price:</br>-5</"
+"br>Multiple 1.05 to Price:sale_price:</br>*1.05</br>Divide Price:sale_price "
+"by 2:</br>/2</br>Append a value By HikeFoce to post_title:</br>&By HikeFoce</"
+"br>Prepend a value HikeFoce to post_title:</br>&HikeFoce [VAL]."
+msgstr ""
+"กำหนดค่าคง HikeFoce post_author:<br>= HikeFoce</br>เพิ่ม $5 ราคา: sale_price:"
+"<br>+ 5</br>ลด $5 ราคา: sale_price:<br>-5</br>1.05 หลายการราคา: sale_price:"
+"<br>* 1.05</br>ราคา: sale_price หาร 2:<br>/ 2</br>ผนวกค่าโดย HikeFoce "
+"post_title:<br>และ โดย HikeFoce</br>เนื้อค่า HikeFoce เพื่อ post_title:<br>และ "
+"HikeFoce [วาล]"
+
+#: includes/views/export/html-wf-export-product-reviews.php:2
+msgid "Export Product Reviews in CSV Format:"
+msgstr "รีวิวสินค้าในรูปแบบ CSV ที่ส่งออก:"
+
+#: includes/views/export/html-wf-export-product-reviews.php:3
+msgid ""
+"Export and download your product reviews in CSV format. This file can be "
+"used to import product reviews back into your Woocommerce shop."
+msgstr ""
+"ส่งออกและดาวน์โหลดรีวิวผลิตภัณฑ์ของคุณในรูปแบบ CSV "
+"แฟ้มนี้สามารถใช้การนำรีวิวสินค้ากลับเข้ามาในร้านของคุณ Woocommerce"
+
+#: includes/views/export/html-wf-export-product-reviews.php:9
+#: includes/views/export/html-wf-export-products.php:9
+msgid "Offset"
+msgstr "ช่วงเวลา"
+
+#: includes/views/export/html-wf-export-product-reviews.php:12
+#: includes/views/export/html-wf-export-products.php:12
+msgid "0"
+msgstr "0"
+
+#: includes/views/export/html-wf-export-product-reviews.php:13
+msgid "The number of product reviews to skip before returning."
+msgstr "สินค้าจำนวนความคิดเห็นข้ามก่อนกลับ"
+
+#: includes/views/export/html-wf-export-product-reviews.php:18
+#: includes/views/export/html-wf-export-products.php:18
+msgid "Limit"
+msgstr "คำสั่ง Limit"
+
+#: includes/views/export/html-wf-export-product-reviews.php:21
+#: includes/views/export/html-wf-export-products.php:21
+msgid "Unlimited"
+msgstr "ไม่จำกัด"
+
+#: includes/views/export/html-wf-export-product-reviews.php:22
+msgid "The number of product reviews to return."
+msgstr "จำนวนรีวิวสินค้ากลับ"
+
+#: includes/views/export/html-wf-export-product-reviews.php:27
+msgid "Date"
+msgstr "วันที่"
+
+#: includes/views/export/html-wf-export-product-reviews.php:30
+msgid "From date"
+msgstr "จากวันที่"
+
+#: includes/views/export/html-wf-export-product-reviews.php:31
+msgid "To date"
+msgstr "ถึงวันที่"
+
+#: includes/views/export/html-wf-export-product-reviews.php:32
+msgid "The comments date."
+msgstr "วันแสดงความคิดเห็น"
+
+#: includes/views/export/html-wf-export-product-reviews.php:37
+msgid "Products"
+msgstr "สินค้า"
+
+#: includes/views/export/html-wf-export-product-reviews.php:40
+msgid "Any Product"
+msgstr "ผลิตภัณฑ์ใด ๆ"
+
+#: includes/views/export/html-wf-export-product-reviews.php:50
+msgid "Reviews under these products will be exported."
+msgstr "ความคิดเห็นภายใต้ผลิตภัณฑ์เหล่านี้จะถูกส่งออก"
+
+#: includes/views/export/html-wf-export-product-reviews.php:55
+msgid "Stars"
+msgstr "ดวงดาว"
+
+#: includes/views/export/html-wf-export-product-reviews.php:58
+msgid "Any Star"
+msgstr "ดาวใด ๆ"
+
+#: includes/views/export/html-wf-export-product-reviews.php:67
+msgid "Reviews with these stars will be exported."
+msgstr "ความคิดเห็นกับดาวเหล่านี้จะถูกส่งออก"
+
+#: includes/views/export/html-wf-export-product-reviews.php:72
+msgid "Verified Owner`s Reviews?"
+msgstr "ของเจ้าของตามความคิดเห็น"
+
+#: includes/views/export/html-wf-export-product-reviews.php:75
+msgid "Any Owner"
+msgstr "เจ้าของใด ๆ"
+
+#: includes/views/export/html-wf-export-product-reviews.php:81
+msgid "Reviews of these users will be exported."
+msgstr "ความคิดเห็นของผู้ใช้เหล่านี้จะถูกส่งออก"
+
+#: includes/views/export/html-wf-export-product-reviews.php:86
+msgid "Export with Replies"
+msgstr "ส่งพร้อมการตอบกลับ"
+
+#: includes/views/export/html-wf-export-product-reviews.php:89
+msgid "Enable"
+msgstr "Enable"
+
+#: includes/views/export/html-wf-export-product-reviews.php:96
+#: includes/views/export/html-wf-export-products.php:72
+msgid ","
+msgstr ","
+
+#: includes/views/export/html-wf-export-product-reviews.php:97
+#: includes/views/export/html-wf-export-products.php:73
+msgid "Column seperator for exported file"
+msgstr "คั่นคอลัมน์สำหรับแฟ้มที่ส่งออก"
+
+#: includes/views/export/html-wf-export-product-reviews.php:102
+#: includes/views/export/html-wf-export-products.php:103
+msgid "Columns"
+msgstr "คอลัมน์"
+
+#: includes/views/export/html-wf-export-product-reviews.php:106
+#: includes/views/export/html-wf-export-products.php:116
+msgid "Column"
+msgstr "คอลัมน์"
+
+#: includes/views/export/html-wf-export-product-reviews.php:109
+#: includes/views/export/html-wf-export-products.php:119
+msgid "Column Name"
+msgstr "คอลัมน์ที่แอ็กทีฟ:"
+
+#: includes/views/export/html-wf-export-product-reviews.php:137
+msgid "Export Product Reviews"
+msgstr "รีวิวสินค้าส่งออก"
+
+#: includes/views/export/html-wf-export-products.php:2
+msgid "Export Product in CSV Format:"
+msgstr "ส่งออกผลิตภัณฑ์ในรูปแบบ CSV:"
+
+#: includes/views/export/html-wf-export-products.php:3
+msgid ""
+"Export and download your products in CSV format. This file can be used to "
+"import products back into your Woocommerce shop."
+msgstr ""
+"ส่งออก และดาวน์โหลดสินค้าของคุณในรูปแบบ CSV "
+"แฟ้มนี้สามารถใช้เพื่อนำเข้าสินค้ากลับเข้ามาในร้านของคุณ Woocommerce"
+
+#: includes/views/export/html-wf-export-products.php:13
+msgid "The number of products to skip before returning."
+msgstr "จำนวนผลิตภัณฑ์เพื่อข้ามก่อนกลับ"
+
+#: includes/views/export/html-wf-export-products.php:22
+msgid "The number of products to return."
+msgstr "จำนวนผลิตภัณฑ์ที่ส่งคืน"
+
+#: includes/views/export/html-wf-export-products.php:27
+msgid "Product Categories"
+msgstr "หมวดหมู่สินค้า"
+
+#: includes/views/export/html-wf-export-products.php:30
+msgid "Any Category"
+msgstr "หมวดหมู่ใดๆ"
+
+#: includes/views/export/html-wf-export-products.php:39
+msgid "Products under these categories will be exported."
+msgstr "ผลิตภัณฑ์ภายใต้หมวดหมู่เหล่านี้จะถูกส่งออก"
+
+#: includes/views/export/html-wf-export-products.php:44
+msgid "Product Types"
+msgstr "ชนิดของผลิตภัณฑ์"
+
+#: includes/views/export/html-wf-export-products.php:47
+msgid "All Types"
+msgstr "ทุกประเภท"
+
+#: includes/views/export/html-wf-export-products.php:55
+msgid "Products under these types will be exported."
+msgstr "ผลิตภัณฑ์ภายใต้ประเภทนี้จะถูกส่งออก"
+
+#: includes/views/export/html-wf-export-products.php:60
+msgid "Sort Columns"
+msgstr "เรียงลำดับสดมภ์"
+
+#: includes/views/export/html-wf-export-products.php:63
+msgid "post_parent , ID"
+msgstr "post_parent, ID"
+
+#: includes/views/export/html-wf-export-products.php:64
+msgid ""
+"What columns to sort pages by, comma-separated. Accepts post_author , "
+"post_date , post_title, post_name, post_modified, menu_order, "
+"post_modified_gmt , rand , comment_count."
+msgstr ""
+"คอลัมน์การเรียงลำดับหน้า โดย จุลภาค รับ post_author, post_date, post_title, "
+"post_name, post_modified, menu_order, post_modified_gmt แรนด์ comment_count"
+
+#: includes/views/export/html-wf-export-products.php:86
+msgid "Select a mapping file for export."
+msgstr "เลือกแฟ้มการแมปสำหรับการส่งออก"
+
+#: includes/views/export/html-wf-export-products.php:156
+msgid "Include hidden meta data"
+msgstr "รวมข้อมูลเมตาที่ซ่อนอยู่"
+
+#: includes/views/export/html-wf-export-products.php:166
+msgid "Save the export mapping"
+msgstr "บันทึกการส่งออกแมป"
+
+#: includes/views/export/html-wf-export-products.php:174
+msgid "Export Products"
+msgstr "สินค้าส่งออก"
+
+#: includes/views/html-wf-admin-screen.php:4
+msgid "Product Import / Export"
+msgstr "สินค้านำเข้า / ส่งออก"
+
+#: includes/views/html-wf-admin-screen.php:5
+msgid "Product Reviews Import / Export"
+msgstr "รีวิวผลิตภัณฑ์นำเข้า / ส่งออก"
+
+#: includes/views/html-wf-admin-screen.php:6
+msgid "Settings"
+msgstr "การตั้งค่า"
+
+#: includes/views/html-wf-getting-started-review.php:3
+msgid "Product Reviews CSV Import Export"
+msgstr "ผลิตภัณฑ์จาก CSV นำเข้าส่งออก"
+
+#: includes/views/html-wf-getting-started-review.php:3
+#: includes/views/html-wf-getting-started.php:3
+msgid "Before getting started prepare your CSV files"
+msgstr "ก่อนเริ่มต้นเตรียมแฟ้ม CSV ของคุณ"
+
+#: includes/views/html-wf-getting-started-review.php:5
+#: includes/views/html-wf-getting-started.php:5
+#: product-csv-import-export.php:94
+msgid "Documentation"
+msgstr "เอกสารประกอบ"
+
+#: includes/views/html-wf-getting-started-review.php:6
+msgid "Product Review Sample CSV"
+msgstr "ตัวอย่างรีวิวผลิตภัณฑ์ CSV"
+
+#: includes/views/html-wf-getting-started.php:3
+msgid "Product CSV Import Export"
+msgstr "ผลิตภัณฑ์ CSV นำเข้าส่งออก"
+
+#: includes/views/html-wf-getting-started.php:6
+msgid "Sample Commercial CSV"
+msgstr "ตัวอย่าง CSV พาณิชย์"
+
+#: includes/views/html-wf-getting-started.php:7
+msgid "Sample WooCommerce CSV"
+msgstr "ตัวอย่าง WooCommerce CSV"
+
+#: includes/views/import/html-wf-import-product-reviews.php:2
+msgid "Import Product Reviews in CSV Format:"
+msgstr "รีวิวสินค้านำเข้าในรูปแบบ CSV:"
+
+#: includes/views/import/html-wf-import-product-reviews.php:3
+msgid ""
+"Import product reviews in CSV format from different sources (  from your "
+"computer OR from another server via FTP )"
+msgstr ""
+"รีวิวผลิตภัณฑ์นำเข้าในรูปแบบ CSV จากแหล่งต่าง ๆ (จากคอมพิวเตอร์ของคุณ หรือ "
+"จากเซิร์ฟเวอร์อื่นผ่านทาง FTP)"
+
+#: includes/views/import/html-wf-import-product-reviews.php:9
+msgid "Import Product Reviews"
+msgstr "รีวิวสินค้านำเข้า"
+
+#: includes/views/import/html-wf-import-product-reviews.php:11
+msgid "Merge product reviews if exists"
+msgstr "รวมรีวิวสินค้าถ้ามีอยู่"
+
+#: includes/views/import/html-wf-import-products.php:2
+msgid "Import Products in CSV Format:"
+msgstr "นำเข้าสินค้าในรูปแบบ CSV:"
+
+#: includes/views/import/html-wf-import-products.php:3
+msgid ""
+"Import products in CSV format ( works for simple, grouped, external and "
+"variable products)  from different sources (  from your computer OR from "
+"another server via FTP )"
+msgstr ""
+"สินค้าในรูปแบบ CSV (ทำงานสำหรับผลิตภัณฑ์ที่เรียบง่าย จัดกลุ่ม ภายนอก และตัวแปร) "
+"นำเข้าจากแหล่งต่าง ๆ (จากคอมพิวเตอร์ของคุณ หรือ จากเซิร์ฟเวอร์อื่นผ่านทาง FTP)"
+
+#: includes/views/import/html-wf-import-products.php:11
+msgid "Import Products"
+msgstr "สินค้านำเข้า"
+
+#: includes/views/import/html-wf-import-products.php:13
+msgid "Update Existing Products "
+msgstr "ปรับปรุงผลิตภัณฑ์ที่มีอยู่"
+
+#: includes/views/import/html-wf-import-products.php:15
+msgid "Skip New Products"
+msgstr "ผลิตภัณฑ์แปลกใหม่"
+
+#: includes/views/settings/html-wf-settings-products.php:44
+#: includes/views/settings/html-wf-settings-products.php:58
+#, php-format
+msgid "The next export is scheduled on <code>%s</code>"
+msgstr "การจัดทำกำหนดการไว้<code>%s</code>"
+
+#: includes/views/settings/html-wf-settings-products.php:46
+#: includes/views/settings/html-wf-settings-products.php:60
+msgid "There is no export scheduled."
+msgstr "มีส่งไม่มีกำหนด"
+
+#: includes/views/settings/html-wf-settings-products.php:49
+#: includes/views/settings/html-wf-settings-products.php:63
+#, php-format
+msgid "The next import is scheduled on <code>%s</code>"
+msgstr "กำหนดการในการนำเข้าต่อไป<code>%s</code>"
+
+#: includes/views/settings/html-wf-settings-products.php:51
+#: includes/views/settings/html-wf-settings-products.php:65
+msgid "There is no import scheduled."
+msgstr "มีนำเข้าไม่มีเวลา"
+
+#: includes/views/settings/html-wf-settings-products.php:77
+msgid "FTP Settings for Import/Export Products"
+msgstr "การตั้งค่า FTP สำหรับนำเข้าและส่งออกผลิตภัณฑ์"
+
+#: includes/views/settings/html-wf-settings-products.php:82
+#: includes/views/settings/html-wf-settings-products.php:266
+msgid "Enable FTP"
+msgstr "เปิดใช้งาน FTP"
+
+#: includes/views/settings/html-wf-settings-products.php:127
+msgid "Automatically Export Products"
+msgstr "ผลิตภัณฑ์ที่ส่งออกโดยอัตโนมัติ"
+
+#: includes/views/settings/html-wf-settings-products.php:131
+#: includes/views/settings/html-wf-settings-products.php:189
+#: includes/views/settings/html-wf-settings-products.php:315
+#: includes/views/settings/html-wf-settings-products.php:352
+msgid "Disabled"
+msgstr "ปิดใช้งานแล้ว"
+
+#: includes/views/settings/html-wf-settings-products.php:132
+#: includes/views/settings/html-wf-settings-products.php:190
+#: includes/views/settings/html-wf-settings-products.php:316
+#: includes/views/settings/html-wf-settings-products.php:353
+msgid "Enabled"
+msgstr "เปิดใช้งาน"
+
+#: includes/views/settings/html-wf-settings-products.php:139
+#: includes/views/settings/html-wf-settings-products.php:323
+msgid "Export Start Time"
+msgstr "เวลาเริ่มต้นการส่งออก"
+
+#: includes/views/settings/html-wf-settings-products.php:143
+#: includes/views/settings/html-wf-settings-products.php:201
+#: includes/views/settings/html-wf-settings-products.php:327
+#: includes/views/settings/html-wf-settings-products.php:364
+#, php-format
+msgid "Local time is <code>%s</code>."
+msgstr "เวลาท้องถิ่นคือ <code>%s</code>"
+
+#: includes/views/settings/html-wf-settings-products.php:145
+#: includes/views/settings/html-wf-settings-products.php:203
+#: includes/views/settings/html-wf-settings-products.php:329
+#: includes/views/settings/html-wf-settings-products.php:366
+msgid "<code>Enter like 6:18pm or 12:27am</code>"
+msgstr "<code>Enter like 6:18pm or 12:27am</code>"
+
+#: includes/views/settings/html-wf-settings-products.php:150
+#: includes/views/settings/html-wf-settings-products.php:334
+msgid "Export Interval [ Minutes ]"
+msgstr "ช่วงส่งออก [นาที]"
+
+#: includes/views/settings/html-wf-settings-products.php:163
+msgid "Select an export mapping file."
+msgstr "เลือกไฟล์ส่งออกแมป"
+
+#: includes/views/settings/html-wf-settings-products.php:185
+msgid "Automatically Import Products"
+msgstr "สินค้านำเข้าโดยอัตโนมัติ"
+
+#: includes/views/settings/html-wf-settings-products.php:197
+#: includes/views/settings/html-wf-settings-products.php:360
+msgid "Import Start Time"
+msgstr "เวลาเริ่มต้นการนำเข้า"
+
+#: includes/views/settings/html-wf-settings-products.php:208
+#: includes/views/settings/html-wf-settings-products.php:371
+msgid "Import Interval [ Minutes ]"
+msgstr "ช่วงนำเข้า [นาที]"
+
+#: includes/views/settings/html-wf-settings-products.php:216
+msgid "Merge Products if exist"
+msgstr "รวมผลิตภัณฑ์ถ้ามีอยู่"
+
+#: includes/views/settings/html-wf-settings-products.php:224
+msgid "Skip new product"
+msgstr "ผลิตภัณฑ์ใหม่"
+
+#: includes/views/settings/html-wf-settings-products.php:261
+msgid "FTP Settings for Import/Export Reviews"
+msgstr "การตั้งค่า FTP สำหรับการรีวิว"
+
+#: includes/views/settings/html-wf-settings-products.php:311
+msgid "Automatically Export Reviews"
+msgstr "ออกความคิดเห็น"
+
+#: includes/views/settings/html-wf-settings-products.php:348
+msgid "Automatically Import Reviews"
+msgstr "ความคิดเห็นที่นำเข้าโดยอัตโนมัติ"
+
+#: includes/views/settings/html-wf-settings-products.php:379
+msgid "Merge Reviews if exist"
+msgstr "ผสานความคิดเห็นถ้ามีอยู่"
+
+#: includes/views/settings/html-wf-settings-products.php:410
+msgid "Save Settings"
+msgstr "บันทึกการตั้งค่า"
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:373
+#, php-format
+msgid ""
+"The license key for %s has expired. You can reactivate or purchase a license "
+"key from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:384
+#, php-format
+msgid ""
+"The subscription for %s is on-hold. You can reactivate the subscription from "
+"your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:395
+#, php-format
+msgid ""
+"The subscription for %s has been cancelled. You can renew the subscription "
+"from your account <a href=\"%s\" target=\"_blank\">dashboard</a>. A new "
+"license key will be emailed to you after your order has been completed."
+msgstr ""
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:406
+#, php-format
+msgid ""
+"The subscription for %s has expired. You can reactivate the subscription "
+"from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:417
+#, php-format
+msgid ""
+"The subscription for %s has been suspended. You can reactivate the "
+"subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</"
+"a>."
+msgstr ""
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:428
+#, php-format
+msgid ""
+"The subscription for %s is still pending. You can check on the status of the "
+"subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</"
+"a>."
+msgstr ""
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:439
+#, php-format
+msgid ""
+"The subscription for %s has been placed in the trash and will be deleted "
+"soon. You can purchase a new subscription from your account <a href=\"%s\" "
+"target=\"_blank\">dashboard</a>."
+msgstr ""
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:450
+#, php-format
+msgid ""
+"A subscription for %s could not be found. You can purchase a subscription "
+"from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:461
+#, php-format
+msgid ""
+"A license key for %s could not be found. Maybe you forgot to enter a license "
+"key when setting up %s, or the key was deactivated in your account. You can "
+"reactivate license key at your plugin <a href=\"%s\" target=\"_blank"
+"\">settings page</a>."
+msgstr ""
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:472
+#, php-format
+msgid ""
+"Download permission for %s has been revoked possibly due to a license key or "
+"subscription expiring. You can reactivate or purchase a license key from "
+"your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:483
+#, php-format
+msgid ""
+"%s has not been activated. Go to the plugin <a href=\"%s\" target=\"_blank"
+"\">settings page</a> and enter the license key and license email to activate "
+"%s."
+msgstr ""
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:494
+#, php-format
+msgid ""
+"You changed the subscription for %s, so you will need to enter your new API "
+"License Key in the settings page. The License Key should have arrived in "
+"your email inbox, if not you can get it by logging into your account <a href="
+"\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+
+#: product-csv-import-export.php:92 welcome/welcome.php:46
+#: welcome/welcome.php:57
+msgid "Product Import Export"
+msgstr "สินค้านำเข้าส่งออก"
+
+#: product-csv-import-export.php:93
+msgid "Review Import Export"
+msgstr "รีวิวนำเข้าส่งออก"
+
+#: product-csv-import-export.php:95
+msgid "Support"
+msgstr "การสนับสนุน"
+
+#: product-csv-import-export.php:112 product-csv-import-export.php:254
+msgid "Successfully uploaded via FTP."
+msgstr "อัพโหลดผ่าน FTP เรียบร้อยแล้ว"
+
+#: product-csv-import-export.php:115 product-csv-import-export.php:257
+msgid "Error while uploading via FTP."
+msgstr "ข้อผิดพลาดขณะอัพโหลดผ่าน FTP"
+
+#: product-csv-import-export.php:169
+msgid "Import <strong>products</strong> to your store via a csv file."
+msgstr "<strong>สินค้า</strong>ที่นำเข้าไปเก็บผ่านไฟล์ csv ของคุณ"
+
+#: product-csv-import-export.php:170
+msgid "Cron Import <strong>products</strong> to your store via a csv file."
+msgstr "Cron นำ<strong>ผลิตภัณฑ์</strong>ไปเก็บผ่านไฟล์ csv ของคุณ"
+
+#: product-csv-import-export.php:260
+msgid "Please choose the file in CSV format either using Method 1 or Method 2."
+msgstr "กรุณาเลือกแฟ้มในรูปแบบ CSV โดยใช้ทั้งวิธีที่ 1 หรือวิธีที่ 2"
+
+#: product-csv-import-export.php:314
+msgid "Import <strong>product reviews</strong> to your store via a csv file."
+msgstr "นำ<strong>ผลิตภัณฑ์</strong>ไปยังร้านค้าของคุณผ่านไฟล์ csv"
+
+#: product-csv-import-export.php:315
+msgid ""
+"Cron Import <strong>product reviews</strong> to your store via a csv file."
+msgstr "Cron นำ<strong>ผลิตภัณฑ์</strong>ไปเก็บผ่านไฟล์ csv ของคุณ"
+
+#: product-csv-import-export.php:344
+msgid ""
+"Oops! You tried installing the premium version without deactivating and "
+"deleting the basic version. Kindly deactivate and delete UPS(Basic) "
+"Woocommerce Extension and then try again"
+msgstr ""
+"โอ๊ะ คุณพยายามติดตั้งรุ่นพรีเมี่ยมโดยไม่ปิด และลบรูปแบบพื้นฐาน กรุณาปิดการใช้งาน และลบนามสกุล "
+"Woocommerce UPS(Basic) และลองอีกครั้ง"
+
+#: welcome/welcome.php:36
+msgid "Welcome to Product Import Export"
+msgstr "ยินดีต้อนรับสู่ผลิตภัณฑ์นำเข้าส่งออก"
+
+#: welcome/welcome.php:38
+msgid "WooCommerce Product Import Export can be much easier than you expect"
+msgstr "WooCommerce สินค้านำเข้าส่งออกได้มากขึ้นกว่าที่คุณคาดหวัง"
+
+#: welcome/welcome.php:40
+msgid "Go through our  Tutorial video to get an overall idea on how it works."
+msgstr "ไปผ่านวีดีโอของเราได้รับความคิดโดยรวมในการทำงาน"

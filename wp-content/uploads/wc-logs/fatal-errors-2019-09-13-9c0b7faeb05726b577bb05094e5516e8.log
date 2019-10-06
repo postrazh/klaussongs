@@ -1,0 +1,30 @@
+2019-09-13T21:03:26+00:00 CRITICAL Uncaught Error: Call to undefined function jason_encode() in /home/arjprofile/public_html/klaussongs.com/wp-content/plugins/builder/builder.php:128
+Stack trace:
+#0 /home/arjprofile/public_html/klaussongs.com/wp-includes/shortcodes.php(325): diamond_table_generator('', '', 'diandmaker')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 /home/arjprofile/public_html/klaussongs.com/wp-includes/shortcodes.php(199): preg_replace_callback('/\\[(\\[?)(diandm...', 'do_shortcode_ta...', '\n[diandmaker]\n')
+#3 /home/arjprofile/public_html/klaussongs.com/wp-content/themes/flatsome/inc/helpers/helpers-shortcode.php(203): do_shortcode('\n[diandmaker]\n')
+#4 /home/arjprofile/public_html/klaussongs.com/wp-includes/class-wp-hook.php(286): flatsome_contentfix('\n[diandmaker]\n')
+#5 /home/arjprofile/public_html/klaussongs.com/wp-includes/plugin.php(208): WP_Hook->apply_filters('\n[diandmaker]\n', Array)
+#6 /home/arjprofile/public_html/klaussongs.com/wp-includes/post-template.php(247): apply_filters('the_content', '<!-- wp:html in /home/arjprofile/public_html/klaussongs.com/wp-content/plugins/builder/builder.php on line 128
+
+2019-09-13T21:03:26+00:00 CRITICAL Uncaught Error: Call to undefined function jason_encode() in /home/arjprofile/public_html/klaussongs.com/wp-content/plugins/builder/builder.php:128
+Stack trace:
+#0 /home/arjprofile/public_html/klaussongs.com/wp-includes/shortcodes.php(325): diamond_table_generator('', '', 'diandmaker')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 /home/arjprofile/public_html/klaussongs.com/wp-includes/shortcodes.php(199): preg_replace_callback('/\\[(\\[?)(diandm...', 'do_shortcode_ta...', '\n[diandmaker]\n')
+#3 /home/arjprofile/public_html/klaussongs.com/wp-content/themes/flatsome/inc/helpers/helpers-shortcode.php(203): do_shortcode('\n[diandmaker]\n')
+#4 /home/arjprofile/public_html/klaussongs.com/wp-includes/class-wp-hook.php(286): flatsome_contentfix('\n[diandmaker]\n')
+#5 /home/arjprofile/public_html/klaussongs.com/wp-includes/plugin.php(208): WP_Hook->apply_filters('\n[diandmaker]\n', Array)
+#6 /home/arjprofile/public_html/klaussongs.com/wp-includes/post-template.php(247): apply_filters('the_content', '<!-- wp:html in /home/arjprofile/public_html/klaussongs.com/wp-content/plugins/builder/builder.php on line 128
+
+2019-09-13T21:03:53+00:00 CRITICAL Uncaught Error: Call to undefined function jason_encode() in /home/arjprofile/public_html/klaussongs.com/wp-content/plugins/builder/builder.php:128
+Stack trace:
+#0 /home/arjprofile/public_html/klaussongs.com/wp-includes/shortcodes.php(325): diamond_table_generator('', '', 'diandmaker')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 /home/arjprofile/public_html/klaussongs.com/wp-includes/shortcodes.php(199): preg_replace_callback('/\\[(\\[?)(diandm...', 'do_shortcode_ta...', '\n[diandmaker]\n')
+#3 /home/arjprofile/public_html/klaussongs.com/wp-content/themes/flatsome/inc/helpers/helpers-shortcode.php(203): do_shortcode('\n[diandmaker]\n')
+#4 /home/arjprofile/public_html/klaussongs.com/wp-includes/class-wp-hook.php(286): flatsome_contentfix('\n[diandmaker]\n')
+#5 /home/arjprofile/public_html/klaussongs.com/wp-includes/plugin.php(208): WP_Hook->apply_filters('\n[diandmaker]\n', Array)
+#6 /home/arjprofile/public_html/klaussongs.com/wp-includes/post-template.php(247): apply_filters('the_content', '<!-- wp:html in /home/arjprofile/public_html/klaussongs.com/wp-content/plugins/builder/builder.php on line 128
+

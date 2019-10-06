@@ -1,0 +1,40 @@
+2019-09-06T06:56:31+00:00 CRITICAL Uncaught Error: Call to a member function query() on null in /home/arjprofile/public_html/klaussongs.com/wp-content/plugins/builder/builder.php:22
+Stack trace:
+#0 /home/arjprofile/public_html/klaussongs.com/wp-includes/shortcodes.php(325): diamond_table_generator('', '', 'diandmaker')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 /home/arjprofile/public_html/klaussongs.com/wp-includes/shortcodes.php(199): preg_replace_callback('/\\[(\\[?)(diandm...', 'do_shortcode_ta...', '\n[diandmaker]\n')
+#3 /home/arjprofile/public_html/klaussongs.com/wp-content/themes/flatsome/inc/helpers/helpers-shortcode.php(203): do_shortcode('\n[diandmaker]\n')
+#4 /home/arjprofile/public_html/klaussongs.com/wp-includes/class-wp-hook.php(286): flatsome_contentfix('\n[diandmaker]\n')
+#5 /home/arjprofile/public_html/klaussongs.com/wp-includes/plugin.php(208): WP_Hook->apply_filters('\n[diandmaker]\n', Array)
+#6 /home/arjprofile/public_html/klaussongs.com/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php(1532): apply_ in /home/arjprofile/public_html/klaussongs.com/wp-content/plugins/builder/builder.php on line 22
+
+2019-09-06T07:19:18+00:00 CRITICAL Uncaught Error: Call to a member function query() on null in /home/arjprofile/public_html/klaussongs.com/wp-content/plugins/builder/builder.php:29
+Stack trace:
+#0 /home/arjprofile/public_html/klaussongs.com/wp-includes/shortcodes.php(325): diamond_table_generator('', '', 'diandmaker')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 /home/arjprofile/public_html/klaussongs.com/wp-includes/shortcodes.php(199): preg_replace_callback('/\\[(\\[?)(diandm...', 'do_shortcode_ta...', '\n[diandmaker]\n')
+#3 /home/arjprofile/public_html/klaussongs.com/wp-content/themes/flatsome/inc/helpers/helpers-shortcode.php(203): do_shortcode('\n[diandmaker]\n')
+#4 /home/arjprofile/public_html/klaussongs.com/wp-includes/class-wp-hook.php(286): flatsome_contentfix('\n[diandmaker]\n')
+#5 /home/arjprofile/public_html/klaussongs.com/wp-includes/plugin.php(208): WP_Hook->apply_filters('\n[diandmaker]\n', Array)
+#6 /home/arjprofile/public_html/klaussongs.com/wp-includes/post-template.php(247): apply_filters('the_content', '<!-- wp:html  in /home/arjprofile/public_html/klaussongs.com/wp-content/plugins/builder/builder.php on line 29
+
+2019-09-06T07:19:22+00:00 CRITICAL Uncaught Error: Call to a member function query() on null in /home/arjprofile/public_html/klaussongs.com/wp-content/plugins/builder/builder.php:29
+Stack trace:
+#0 /home/arjprofile/public_html/klaussongs.com/wp-includes/shortcodes.php(325): diamond_table_generator('', '', 'diandmaker')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 /home/arjprofile/public_html/klaussongs.com/wp-includes/shortcodes.php(199): preg_replace_callback('/\\[(\\[?)(diandm...', 'do_shortcode_ta...', '\n[diandmaker]\n')
+#3 /home/arjprofile/public_html/klaussongs.com/wp-content/themes/flatsome/inc/helpers/helpers-shortcode.php(203): do_shortcode('\n[diandmaker]\n')
+#4 /home/arjprofile/public_html/klaussongs.com/wp-includes/class-wp-hook.php(286): flatsome_contentfix('\n[diandmaker]\n')
+#5 /home/arjprofile/public_html/klaussongs.com/wp-includes/plugin.php(208): WP_Hook->apply_filters('\n[diandmaker]\n', Array)
+#6 /home/arjprofile/public_html/klaussongs.com/wp-includes/post-template.php(247): apply_filters('the_content', '<!-- wp:html  in /home/arjprofile/public_html/klaussongs.com/wp-content/plugins/builder/builder.php on line 29
+
+2019-09-06T07:19:42+00:00 CRITICAL Uncaught Error: Call to a member function query() on null in /home/arjprofile/public_html/klaussongs.com/wp-content/plugins/builder/builder.php:29
+Stack trace:
+#0 /home/arjprofile/public_html/klaussongs.com/wp-includes/shortcodes.php(325): diamond_table_generator('', '', 'diandmaker')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 /home/arjprofile/public_html/klaussongs.com/wp-includes/shortcodes.php(199): preg_replace_callback('/\\[(\\[?)(diandm...', 'do_shortcode_ta...', '\n[diandmaker]\n')
+#3 /home/arjprofile/public_html/klaussongs.com/wp-content/themes/flatsome/inc/helpers/helpers-shortcode.php(203): do_shortcode('\n[diandmaker]\n')
+#4 /home/arjprofile/public_html/klaussongs.com/wp-includes/class-wp-hook.php(286): flatsome_contentfix('\n[diandmaker]\n')
+#5 /home/arjprofile/public_html/klaussongs.com/wp-includes/plugin.php(208): WP_Hook->apply_filters('\n[diandmaker]\n', Array)
+#6 /home/arjprofile/public_html/klaussongs.com/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php(1532): apply_ in /home/arjprofile/public_html/klaussongs.com/wp-content/plugins/builder/builder.php on line 29
+
