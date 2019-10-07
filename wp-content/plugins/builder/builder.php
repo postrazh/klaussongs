@@ -78,27 +78,6 @@ $sql = "SELECT
  GROUP BY p.ID";
 
 
-// $sql = "SELECT 
-//     p.ID AS 'Product ID', 
-//     p.post_title AS 'Product Name', 
-//     IF(meta.meta_key LIKE '_regular_price%', meta.meta_value, NULL) AS 'Price', 
-//     p.guid AS link_view
-//  FROM wp_posts AS p 
-//  INNER JOIN wp_term_relationships AS tr ON p.ID = tr.object_id 
-//  INNER JOIN wp_term_taxonomy AS tt ON tr.term_taxonomy_id = tt.term_id 
-//     AND (tt.taxonomy LIKE 'pa_carat%' 
-//       OR tt.taxonomy LIKE 'pa_clarity%' 
-//       OR tt.taxonomy LIKE 'pa_shape%' 
-//       OR tt.taxonomy LIKE 'pa_polish%' 
-//       OR tt.taxonomy LIKE 'pa_report%' 
-//       OR tt.taxonomy LIKE 'pa_color%' 
-//       OR tt.taxonomy LIKE 'pa_symmetry%' 
-//       OR tt.taxonomy LIKE 'pa_cut%') 
-//  INNER JOIN wp_terms AS t ON tr.term_taxonomy_id = t.term_id 
-//  INNER JOIN wp_postmeta AS meta ON p.ID = meta.post_id 
-//  WHERE p.post_type = 'product'AND p.post_status ='publish' AND (meta.meta_key LIKE '_regular_price%')";
-
-
 $result = $conn->query($sql);
 $json_array = array();
 $output .= '<div style="margin-bottom: 200px;"></div>
