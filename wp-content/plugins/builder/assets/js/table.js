@@ -12,114 +12,8 @@ $("#tabs").tabs({
     event: "mouseover"
 });
 
-// table config file and body
-var renderer = {
-    text: function(data) {
-        return data;
-    },
-    link: function(data) {
-        return '<a href="' + data + '">View</a>';
-    },
-    price: function(data) {
-        return moneyFormat.to(data);
-    }
-};
-
-var config = [{
-        attr: "Carat",
-        renderer: renderer.text
-    },
-    {
-        attr: "Color",
-        renderer: renderer.text
-    },
-    {
-        attr: "Shape",
-        renderer: renderer.text
-    },
-    {
-        attr: "Price",
-        renderer: renderer.price
-    },
-    {
-        attr: "Cut",
-        renderer: renderer.text
-    },
-    {
-        attr: "Symmetry",
-        renderer: renderer.text
-    },
-    {
-        attr: "Report",
-        renderer: renderer.text
-    },
-    {
-        attr: "Clarity",
-        renderer: renderer.text
-    },
-    {
-        attr: "Polish",
-        renderer: renderer.text
-    },
-    {
-        attr: "link_view",
-        renderer: renderer.link
-    }
-];
-
+// table filter
 var filterFunctions = { };
-
-// functions
-let table = document.querySelector("#simpleTable");
-$("table").stupidtable();
-
-// table head
-var header = table.createTHead();
-var row = header.insertRow(0);
-row.classList.add("headRow")
-var headCell0 = row.insertCell(0);
-headCell0.innerHTML = "Carat";
-var headCell1 = row.insertCell(1);
-headCell1.innerHTML = "Color";
-var headCell2 = row.insertCell(2);
-headCell2.innerHTML = "Shape";
-var headCell33 = row.insertCell(3);
-headCell33.innerHTML = "Price";
-var headCell3 = row.insertCell(4);
-headCell3.innerHTML = "Cut";
-var headCell4 = row.insertCell(5);
-headCell4.innerHTML = "Symmetry";
-var headCell5 = row.insertCell(6);
-headCell5.innerHTML = "Report";
-var headCell5 = row.insertCell(7);
-headCell5.innerHTML = "Clarity";
-var headCell5 = row.insertCell(8);
-headCell5.innerHTML = "Polish";
-var headCell5 = row.insertCell(9);
-headCell5.innerHTML = "Link";
-
-const moneyFormat = wNumb({
-    decimals: 0,
-    thousand: ',',
-    prefix: '$'
-});
-
-// Initial Render:  Loadloop through original data, display all
-let tbody = $("<tbody/>");
-filtered.forEach(function(data) {
-    let row = $("<tr/>");
-    row.addClass('showMyRow');
-    // attach config file and loop through 
-    config.forEach(function(entry) {
-        let cell = $("<td/>");
-        cell.html(entry.renderer(data[entry.attr]));
-        row.append(cell);
-    });
-
-    tbody.append(row);
-});
-
-$("#simpleTable").append(tbody);
 
 
 // functions
@@ -506,5 +400,55 @@ var masterFilterAndRender = function () {
 
 
 $(document).ready(function() {
-  initSliders();
+  // slider
+   initSliders();
+
+  // debugger;
+
+  // table
+  $('#example').dataTable( {
+
+      "ordering": false,
+      "info":     false,
+      "searching": false,
+
+      /* paging mode */
+      "dom": '<f<t>ip>',
+
+
+      /* scroll mode */
+
+      // "paging": false,
+      // "scrollY":        "500px",
+      // deferRender:    true,
+      // scroller:       true,
+      
+      columnDefs: [ {
+              orderable: false,
+              className: 'select-checkbox',
+              targets:   0
+          } ],
+
+      select: {
+              style:    'multi',
+              selector: 'td:first-child'
+          },
+
+      "columns": [
+          { "title": "", "data": null, "defaultContent": "" },
+          { "title": "Carat", "data": "Carat" },
+          { "title": "Color", "data": "Color" },
+          { "title": "Shape", "data": "Shape" },
+          { "title": "Price", "data": "Price" },
+          { "title": "Cut", "data": "Cut" },
+          { "title": "Symmetry", "data": "Symmetry" },
+          { "title": "Report", "data": "Report" },
+          { "title": "Clarity", "data": "Clarity" },
+          { "title": "Polish", "data": "Polish" },
+          { "title": "Link", "data": "link_view" },
+      ],
+      
+      "data": filtered
+  } );
+  
 });

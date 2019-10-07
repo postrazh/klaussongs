@@ -8,25 +8,32 @@ Version: 1.1
 **/
 
 function addFiles(){
-	// wp_enqueue_style(get_stylesheet_directory_uri() );
-	wp_enqueue_style('bootstrap' , 'http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css');
-	wp_enqueue_style('fontii' , 'https://fonts.googleapis.com/css?family=Gayathri&display=swap');
-	wp_enqueue_style('font-awesome' , 'https://use.fontawesome.com/releases/v5.8.2/css/all.css');
-	wp_enqueue_style('jqueryUI' , 'https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css');
-	wp_enqueue_style('jquerymobile' , 'https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.0.2/nouislider.min.css');
-	wp_enqueue_script( 'jquerydd', 'https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js' );
-	wp_enqueue_script( 'bootstrap-js', 'http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js' );
-	wp_enqueue_script( 'jqueryddd', 'https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.0.2/nouislider.min.js' );
+  // wp_enqueue_style(get_stylesheet_directory_uri() );
+  wp_enqueue_style('bootstrap' , 'http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css');
+  wp_enqueue_style('fontii' , 'https://fonts.googleapis.com/css?family=Gayathri&display=swap');
+  wp_enqueue_style('font-awesome' , 'https://use.fontawesome.com/releases/v5.8.2/css/all.css');
+  wp_enqueue_style('jqueryUI' , 'https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css');
+  wp_enqueue_style('jquerymobile' , 'https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.0.2/nouislider.min.css');
+  wp_enqueue_script( 'jquerydd', 'https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js' );
+
+  wp_enqueue_script( 'bootstrap-js', 'http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js' );
+  wp_enqueue_script( 'jqueryddd', 'https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.0.2/nouislider.min.js' );
   wp_enqueue_script( 'wNumbjs', 'https://cdnjs.cloudflare.com/ajax/libs/wnumb/1.1.0/wNumb.min.js' );
   
-	wp_enqueue_script( 'j-ui', 'https://code.jquery.com/ui/1.12.1/jquery-ui.js' );
-	wp_enqueue_script( 'stupid', 'https://cdnjs.cloudflare.com/ajax/libs/stupidtable/1.1.3/stupidtable.min.js' );
-	// wp_enqueue_script( 'myscript', 'wp-content/plugins/builder/assets/js/table.js', array(), false, true );
-	
+  wp_enqueue_script( 'j-ui', 'https://code.jquery.com/ui/1.12.1/jquery-ui.js' );
+  wp_enqueue_script( 'stupid', 'https://cdnjs.cloudflare.com/ajax/libs/stupidtable/1.1.3/stupidtable.min.js' );
+  
+  // jquery data table
+  
+  wp_enqueue_script( 'dataTablesjs', 'https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js');
+  wp_enqueue_script( 'dataTablesselectjs', 'https://cdn.datatables.net/select/1.3.1/js/dataTables.select.min.js');
+
+  wp_enqueue_style('dataTables' , 'https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css');
+  wp_enqueue_style('dataTables-select' , 'https://cdn.datatables.net/select/1.3.1/css/select.dataTables.min.css');
+
 }
 
 add_action( 'init', 'addFiles' );
-
 
 
 function diamond_table_generator(){
@@ -82,9 +89,9 @@ $result = $conn->query($sql);
 $json_array = array();
 $output .= '<div style="margin-bottom: 200px;"></div>
 
-			 <div class="container">
-			  <div class="row">
-			    <div class="col-lg-12 filt">
+       <div class="container">
+        <div class="row">
+          <div class="col-lg-12 filt">
               <div class="shape-btn" id="shape-princess">
               <p>Princess</p>
               <img  src="wp-content/uploads/2019/09/1.png">
@@ -95,133 +102,121 @@ $output .= '<div style="margin-bottom: 200px;"></div>
               </div>
               <div class="shape-btn" id="shape-radiant">
               <p>Radiant</p>
-			        <img  src="wp-content/uploads/2019/09/2.png">
+              <img  src="wp-content/uploads/2019/09/2.png">
               </div>
               <div class="shape-btn" id="shape-heart">
               <p>Heart</p>
-			        <img  src="wp-content/uploads/2019/09/3.png">
+              <img  src="wp-content/uploads/2019/09/3.png">
               </div>
               <div class="shape-btn" id="shape-pear">
               <p>Pear</p>
-			        <img  src="wp-content/uploads/2019/09/4.png">
+              <img  src="wp-content/uploads/2019/09/4.png">
               </div>
               <div class="shape-btn" id="shape-marquise">
               <p>Marquise</p>
-			        <img  src="wp-content/uploads/2019/09/5.png">
+              <img  src="wp-content/uploads/2019/09/5.png">
               </div>
               <div class="shape-btn" id="shape-cushion">
               <p>Cushion</p>
-			        <img  src="wp-content/uploads/2019/09/6.png">
+              <img  src="wp-content/uploads/2019/09/6.png">
               </div>
               <div class="shape-btn" id="shape-asscher">
               <p>Asscher</p>
-			        <img  src="wp-content/uploads/2019/09/7.png">
+              <img  src="wp-content/uploads/2019/09/7.png">
               </div>
               <div class="shape-btn" id="shape-emerald">
               <p>Emerald</p>
-			        <img  src="wp-content/uploads/2019/09/8.png">
+              <img  src="wp-content/uploads/2019/09/8.png">
               </div>
               <div class="shape-btn" id="shape-oval">
               <p>Oval</p>
-			        <img  src="wp-content/uploads/2019/09/9.png">
+              <img  src="wp-content/uploads/2019/09/9.png">
               </div>
-			    </div>
-			  <div class="col-lg filt">
-			    <div class="label-slider-filter">price</div>
-			    <div id="price"></div>
-			  </div>
-			  </div>
-			  <div class="row">
-			    <div class="col-lg filt">
-			      <div class="label-slider-filter">Carat</div>
-			      <div id="carat"></div>
-			    </div>
-			    <div class="col-lg filt">
-			      <div class="label-slider-filter">Color</div>
-			      <div id="color"></div>
-			    </div>
-			  </div>
-			  <div class="row">
-			    <div class="col-lg filt">
-			      <div class="label-slider-filter">clarity</div>
-			      <div id="clarity"></div>
-			    </div>
-			    <div class="col-lg filt">
-			      <div class="label-slider-filter">Polish</div>
-			      <div id="polish"></div>
-			    </div>
-			  </div>
-			  <div class="row">
-			    <div class="col-lg filt">
-			      <div class="label-slider-filter">Report</div>
-			      <div id="report"></div>
-			    </div>
-			    <div class="col-lg filt">
-			      <div class="label-slider-filter">Symmetry</div>
-			      <div id="symmetry"></div>
-			    </div>
-			  </div>
-			</div>';
+          </div>
+        <div class="col-lg filt">
+          <div class="label-slider-filter">price</div>
+          <div id="price"></div>
+        </div>
+        </div>
+        <div class="row">
+          <div class="col-lg filt">
+            <div class="label-slider-filter">Carat</div>
+            <div id="carat"></div>
+          </div>
+          <div class="col-lg filt">
+            <div class="label-slider-filter">Color</div>
+            <div id="color"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg filt">
+            <div class="label-slider-filter">clarity</div>
+            <div id="clarity"></div>
+          </div>
+          <div class="col-lg filt">
+            <div class="label-slider-filter">Polish</div>
+            <div id="polish"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg filt">
+            <div class="label-slider-filter">Report</div>
+            <div id="report"></div>
+          </div>
+          <div class="col-lg filt">
+            <div class="label-slider-filter">Symmetry</div>
+            <div id="symmetry"></div>
+          </div>
+        </div>
+      </div>';
 
-			
+      
 $output .= '<div class="container">
-					  <div class="row diamond-wrapper">
-					    <div class="col-lg-12">
-					      <div id="tabs">
-					        <ul>
-					          <li><a href="#result">Results</a></li>
-					          <li><a href="#recently">Recently Viewed</a></li>
-					          <li><a href="#comparison">Comparison</a></li>
-					        </ul>
-					        <div id="result">
-					          <div class="table-responsive">
-					            <div id="table-wrapper">
-					              <div id="table-scroll">
-					                <table class="table" id="simpleTable">
-					                ';
+            <div class="row diamond-wrapper">
+              <div class="col-lg-12">
+                <div id="tabs">
+                  <ul>
+                    <li><a href="#result">Results</a></li>
+                    <li><a href="#recently">Recently Viewed</a></li>
+                    <li><a href="#comparison">Comparison</a></li>
+                  </ul>
+                  <div id="result">
+                    <table id="example" class="display" width="100%"></table>
+                  </div>
+                    
+                          ';
 if ($result->num_rows > 0) {
 
     while($row = $result->fetch_assoc()) {
-    	$json_array[] = $row; 
+      $json_array[] = $row; 
     }
     ?>
 
     
 <script type="text/javascript">
 
-	var myData = <?php echo json_encode($json_array) ?>;
+  var myData = <?php echo json_encode($json_array) ?>;
 
 // change myData to show only columns you need
 let filtered = myData.map(row => 
 Object.fromEntries(
-	Object.entries(row).filter(it => { 
-	let key = it[0]; 
+  Object.entries(row).filter(it => { 
+  let key = it[0]; 
   // add the product id and the product image path to it to make it happen bro
-	return ['Carat','Clarity','Shape', 'Price', 'Color', 'Cut','Symmetry','Report', 'link_view', 'Polish' ].indexOf(key) >= 0 
+  return ['Carat','Clarity','Shape', 'Price', 'Color', 'Cut','Symmetry','Report', 'link_view', 'Polish' ].indexOf(key) >= 0 
     })
   )
 );
 
 
-
-
-
-// let view = document.getElementById["#simpleTable"];
-
 </script>
     
 
     <?php
-	// json_encode($json_array);
-    $output .= '
-    	</table>
-       </div>
-      </div>
-     </div>
-    </div>';
+  // json_encode($json_array);
 
     $output .= '
-    	<div id="recently">
+      <div id="recently">
            <div class="table-responsive">
             <div id="table-wrapper">
               <div id="table-scroll">
@@ -301,7 +296,7 @@ Object.fromEntries(
 $conn->close();
 
 
-	return $output;	
+  return $output; 
 }
 
 
