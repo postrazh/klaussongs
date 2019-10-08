@@ -89,7 +89,7 @@ $result = $conn->query($sql);
 $json_array = array();
 $output .= '<div style="margin-bottom: 200px;"></div>
 
-       <div class="container">
+      <div class="container">
         <div class="row">
           <div class="col-lg-12 filt">
               <div class="shape-btn" id="shape-princess">
@@ -168,23 +168,33 @@ $output .= '<div style="margin-bottom: 200px;"></div>
             <div id="symmetry"></div>
           </div>
         </div>
-      </div>';
+      </div>
+      ';
 
       
 $output .= '<div class="container">
-            <div class="row diamond-wrapper">
-              <div class="col-lg-12">
-                <div id="tabs">
-                  <ul>
-                    <li><a href="#result">Results</a></li>
-                    <li><a href="#recently">Recently Viewed</a></li>
-                    <li><a href="#comparison">Comparison</a></li>
-                  </ul>
-                  <div id="result">
-                    <table id="example" class="display" width="100%"></table>
+              <div class="row diamond-wrapper">
+                <div class="col-lg-12">
+                  <div id="tabs">
+                    <ul>
+                      <li><a href="#results-tab">Results</a></li>
+                      <li><a href="#recently-viewed-tab">Recently Viewed</a></li>
+                      <li><a href="#comparison-tab">Comparison</a></li>
+                    </ul>
+                    <div id="results-tab">
+                      <table id="results-table" class="display" width="100%"></table>
+                    </div>
+                    <div id="recently-viewed-tab">
+                      <table id="recently-viewed-table" class="display" width="100%"></table>
+                    </div>
+                    <div id="comparison-tab">
+                      <table id="comparison-table" class="display" width="100%"></table>
+                    </div>
                   </div>
-                    
-                          ';
+                </div>
+              </div>
+            </div>';
+
 if ($result->num_rows > 0) {
 
     while($row = $result->fetch_assoc()) {
@@ -214,80 +224,6 @@ Object.fromEntries(
 
     <?php
   // json_encode($json_array);
-
-    $output .= '
-      <div id="recently">
-           <div class="table-responsive">
-            <div id="table-wrapper">
-              <div id="table-scroll">
-                <table class="table" id="simpleTable2">
-                  <tr>
-                    <th>Compare</th>
-                    <th>Shape</th>
-                    <th>Carat</th>
-                    <th>Color</th>
-                    <th>Clarity</th>
-                    <th>Polish</th>
-                    <th>Cut</th>
-                    <th>Report</th>
-                    <th>Symmetry</th>
-                    <th>View</th>
-                  </tr>
-                  <tr>
-                    <td><input type="checkbox" name="compare" class="checkmark"></td>
-                    <td>Princess</td>
-                    <td>0.73</td>
-                    <td>D</td>
-                    <td>SI1</td>
-                    <td>Excellent</td>
-                    <td>Fair</td>
-                    <td>GCAL</td>
-                    <td>Ideal</td>
-                    <td><a href="#">view</a></td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="comparison">
-          <div class="table-responsive">
-            <div id="table-wrapper">
-              <div id="table-scroll">
-                <table class="table" id="simpleTable3">
-                  <tr>
-                    <th>Compare</th>
-                    <th>Shape</th>
-                    <th>Carat</th>
-                    <th>Color</th>
-                    <th>Clarity</th>
-                    <th>Polish</th>
-                    <th>Cut</th>
-                    <th>Report</th>
-                    <th>Symmetry</th>
-                    <th>View</th>
-                  </tr>
-                  <tr>
-                    <td><input type="checkbox" name="compare" class="checkmark"></td>
-                    <td>Princess</td>
-                    <td>0.73</td>
-                    <td>D</td>
-                    <td>SI1</td>
-                    <td>Excellent</td>
-                    <td>Fair</td>
-                    <td>GCAL</td>
-                    <td>Ideal</td>
-                    <td><a href="#">view</a></td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div></div></div>
-        </div>'; 
-
-
-
 
 
 }else {
