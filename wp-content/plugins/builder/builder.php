@@ -177,9 +177,27 @@ $output .= '<div class="container">
                 <div class="col-lg-12">
                   <div id="tabs">
                     <ul>
-                      <li><a href="#results-tab">Results</a></li>
-                      <li><a href="#recently-viewed-tab">Recently Viewed</a></li>
-                      <li><a href="#comparison-tab">Comparison</a></li>
+                      <li>
+                        <a href="#results-tab">
+                          <span>Results (</span>
+                          <span id="total-results">0</span>
+                          <span>)</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#recently-viewed-tab">
+                          <span>Recently Viewed (</span>
+                          <span id="recently-views">0</span>
+                          <span>)</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#comparison-tab">
+                          <span>Comparison (</span>
+                          <span id="comparison-views">0</span>
+                          <span>)</span>
+                        </a>
+                      </li>
                     </ul>
                     <div id="results-tab">
                       <table id="results-table" class="display" width="100%"></table>
