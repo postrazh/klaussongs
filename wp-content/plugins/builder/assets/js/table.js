@@ -18,8 +18,6 @@ let savedRowsViewed = sessionStorage['rowsViewed'];
 if (savedRowsViewed != undefined) 
   rowsViewed = JSON.parse(sessionStorage['rowsViewed']);
 
-debugger;
-
 // tabs
 $("#tabs").tabs({
   event: "mouseover"
@@ -28,20 +26,30 @@ $("#tabs").tabs({
 // table filter
 var filterFunctions = {};
 
+const moneyFormat = wNumb({
+            decimals: 0,
+            thousand: ',',
+            prefix: '$'
+          });
 
 // functions
 function initSliders() {
   // find min/max of price, carat
   let minPrice = Infinity;
   let maxPrice = 0;
-  let minCarat = 0;
+  let minCarat = Infinity;
   let maxCarat = 0;
 
   filtered.forEach(
     r => {
-      minPrice = (r.Price < minPrice) ? r.Price : minPrice;
-      maxPrice = (r.Price > maxPrice) ? r.Price : maxPrice;
-      maxCarat = (r.Carat > maxCarat) ? r.Carat : maxCarat;
+      if (r.Price < minPrice) 
+        minPrice = r.Price;
+      if (r.Price > maxPrice) 
+        maxPrice = r.Price;
+      if (r.Carat < minCarat) 
+        minCarat = r.Carat;
+      if (r.Carat > maxCarat) 
+        maxCarat = r.Carat;
     }
   );
 
@@ -49,7 +57,7 @@ function initSliders() {
   maxPrice = Math.ceil((maxPrice / 100)) * 100 + 1000;
 
   // price slider
-  let priceSliderUI = noUiSlider.create(document.getElementById('price'), {
+  window.priceSliderUI = noUiSlider.create(document.getElementById('price'), {
     start: [minPrice, maxPrice],
     connect: false,
     animate: false,
@@ -68,11 +76,11 @@ function initSliders() {
 
   // carat slider
   let caratSliderUI = noUiSlider.create(document.getElementById('carat'), {
-    start: [maxCarat],
+    start: [minCarat, maxCarat],
     connect: false,
     animate: false,
     range: {
-      'min': 0,
+      'min': minCarat,
       'max': maxCarat
     },
     tooltips: true
@@ -81,13 +89,12 @@ function initSliders() {
 
   // color slider
   let colorSymbol = ['J', 'I', 'H', 'G', 'F', 'E', 'D'];
-
   let colorsliderUI = noUiSlider.create(document.getElementById('color'), {
-    start: [colorSymbol[5]],
+    start: [colorSymbol[0], colorSymbol[colorSymbol.length - 1]],
     step: 1,
     range: {
       'min': [0],
-      'max': [6]
+      'max': [colorSymbol.length - 1]
     },
     format: {
       // 'to' the formatted value. Receives a number.
@@ -123,13 +130,12 @@ function initSliders() {
 
   // clarity slider
   let claritySymbol = ['SI2', 'SI1', 'VS2', 'VS1', 'VVS2', 'VVS1', 'IF', 'FL'];
-
   let claritySliderUI = noUiSlider.create(document.getElementById('clarity'), {
-    start: [4],
+    start: [claritySymbol[0], claritySymbol[claritySymbol.length - 1]],
     step: 1,
     range: {
       'min': [0],
-      'max': [7]
+      'max': [claritySymbol.length - 1]
     },
     format: {
       // 'to' the formatted value. Receives a number.
@@ -167,11 +173,11 @@ function initSliders() {
   let polishSymbol = ['Good', 'Very Good', 'Excellent'];
 
   let polishSliderUI = noUiSlider.create(document.getElementById('polish'), {
-    start: [polishSymbol[2]],
+    start: [polishSymbol[0], polishSymbol[polishSymbol.length - 1]],
     step: 1,
     range: {
       'min': [0],
-      'max': [2]
+      'max': [polishSymbol.length - 1]
     },
     format: {
       // 'to' the formatted value. Receives a number.
@@ -209,11 +215,11 @@ function initSliders() {
   let reportSymbol = ['GIA', 'IGI', 'HRD'];
 
   let reportSliderUI = noUiSlider.create(document.getElementById('report'), {
-    start: [reportSymbol[1]],
+    start: [reportSymbol[0], reportSymbol[reportSymbol.length - 1]],
     step: 1,
     range: {
       'min': [0],
-      'max': [2]
+      'max': [reportSymbol.length - 1]
     },
     format: {
       // 'to' the formatted value. Receives a number.
@@ -251,11 +257,11 @@ function initSliders() {
   let symmetrySymbol = ['Good', 'Very Good', 'Excellent'];
 
   let symmetrySliderUI = noUiSlider.create(document.getElementById('symmetry'), {
-    start: [symmetrySymbol[2]],
+    start: [symmetrySymbol[0], symmetrySymbol[symmetrySymbol.length - 1]],
     step: 1,
     range: {
       'min': [0],
-      'max': [2]
+      'max': [symmetrySymbol.length - 1]
     },
     format: {
       // 'to' the formatted value. Receives a number.
@@ -317,20 +323,16 @@ function initSliders() {
   priceSliderUI.on("change",
     function(r) {
       let limitPrice = r;
-      // console.log('priceSliderUI', r)
       limitPrice[0] = parseFloat(limitPrice[0].replace(cleanPrice, ''));
       limitPrice[1] = parseFloat(limitPrice[1].replace(cleanPrice, ''));
-      // function returns true for conditions that require rejecting data
+
       filterFunctions['price'] = (data) => {
-        const moneyFormat = wNumb({
-            decimals: 0,
-            thousand: ',',
-            prefix: '$'
-          });
         var price = moneyFormat.from(data[4]);
-        var matched = limitPrice[0] <= price && price <= limitPrice[1];
-        return matched;
+
+        var isInRange = limitPrice[0] <= price && price <= limitPrice[1];
+        return isInRange;
       }
+
       masterFilterAndRender();
     }
   );
@@ -395,14 +397,10 @@ $.fn.dataTable.ext.search.push(
 
     if (settings.nTable.id == 'results-table') {
 
-      if ($.isEmptyObject(filterFunctions))
-        return true;
-
-      let matched = false;
+      let matched = true;
 
       // match fail if one of filters is failed.
       for (var key in filterFunctions) {
-        
         if (!filterFunctions[key](data)) {
           matched = false;
           break;
@@ -410,6 +408,7 @@ $.fn.dataTable.ext.search.push(
       }
 
       return matched;
+
     } else if (settings.nTable.id == 'recently-viewed-table') {
       
       // debugger;
@@ -436,6 +435,11 @@ function masterFilterAndRender() {
   var table = $('#results-table').DataTable();
 
   table.draw();
+
+  // results table count
+  $('#total-results').html( resultsTable.rows({filter:'applied'}).count() );
+  $('#recently-views').html( recentlyViewedTable.rows({filter:'applied'}).count() );
+  $('#comparison-views').html( comparisonTable.rows({filter:'applied'}).count() );
 }
 
 
@@ -444,7 +448,7 @@ var editor; // use a global for the submit and return data rendering in the exam
 function initTable() {
 
   // results table
-  var resultsTable = $('#results-table').DataTable({
+  window.resultsTable = $('#results-table').DataTable({
 
     "ordering": false,
     "info": false,
@@ -523,7 +527,7 @@ function initTable() {
 
 
   // recently viewed table
-  var recentlyViewedTable = $('#recently-viewed-table').DataTable({
+  window.recentlyViewedTable = $('#recently-viewed-table').DataTable({
 
     "ordering": false,
     "info": false,
@@ -602,7 +606,7 @@ function initTable() {
 
 
   // comparison table
-  var comparisonTable = $('#comparison-table').DataTable({
+  window.comparisonTable = $('#comparison-table').DataTable({
 
     "ordering": false,
     "info": false,
@@ -679,14 +683,11 @@ function initTable() {
     "data": filtered
   });
 
-
-  // results table count
-  $('#total-results').html(filtered.length);
-  $('#recently-views').html(rowsViewed.length);
-  $('#comparison-views').html(rowsSelected.length);
+  // initial filter
+  masterFilterAndRender();
 
 
-  // event handlers
+  // link event handler
   $('table tbody').on('click', 'tr a', function(e) {
     var table = $(this).closest('table').DataTable();
     var $row = $(this).closest('tr');
@@ -705,8 +706,7 @@ function initTable() {
   });
 
   
-  // var resultsTable = $('#results-table').DataTable();
-
+  // checkbox event handler
   $('#results-table tbody, #recently-viewed-table tbody, #comparison-table tbody').on('change', 'input[type="checkbox"]', function(e) {
     var $row = $(this).closest('tr');
 
