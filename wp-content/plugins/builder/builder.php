@@ -224,17 +224,17 @@ if ($result->num_rows > 0) {
 <script type="text/javascript">
 
   var myData = <?php echo json_encode($json_array) ?>;
-
-// change myData to show only columns you need
-let filtered = myData.map(row => 
-Object.fromEntries(
-  Object.entries(row).filter(it => { 
-  let key = it[0]; 
-  // add the product id and the product image path to it to make it happen bro
-  return ['Carat','Clarity','Shape', 'Price', 'Color', 'Cut','Symmetry','Report', 'link_view', 'Polish' ].indexOf(key) >= 0 
-    })
-  )
-);
+  
+  // change myData to show only columns you need
+  let filtered = myData.map(row =>
+    Object.fromEntries(
+      Object.entries(row).filter(it => { 
+        let key = it[0]; 
+        // add the product id and the product image path to it to make it happen bro
+        return ['Product ID', 'Carat','Clarity','Shape', 'Price', 'Color', 'Cut','Symmetry','Report', 'link_view', 'Polish' ].indexOf(key) >= 0  }
+      )
+    )
+  );
 
 
 </script>

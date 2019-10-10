@@ -6,9 +6,19 @@ filtered.forEach(
   }
 );
 
-// 
-var recentlyViewedRows = {}
-var comparisonRows = {}
+// selected row IDs
+var rowsSelected = [];
+var rowsViewed = [];
+
+let savedRowsSelected = sessionStorage['rowsSelected'];
+if (savedRowsSelected != undefined) 
+  rowsSelected = JSON.parse(savedRowsSelected);
+
+let savedRowsViewed = sessionStorage['rowsViewed'];
+if (savedRowsViewed != undefined) 
+  rowsViewed = JSON.parse(sessionStorage['rowsViewed']);
+
+debugger;
 
 // tabs
 $("#tabs").tabs({
@@ -381,21 +391,42 @@ function initSliders() {
 $.fn.dataTable.ext.search.push(
   function(settings, data, dataIndex) {
 
-    if (settings.nTable.id !== 'results-table')
-      return true;
+    var rowId = data[0];
 
-    let matched = true;
+    if (settings.nTable.id == 'results-table') {
 
-    // match fail if one of filters is failed.
-    for (var key in filterFunctions) {
-      
-      if (!filterFunctions[key](data)) {
-        matched = false;
-        break;
+      if ($.isEmptyObject(filterFunctions))
+        return true;
+
+      let matched = false;
+
+      // match fail if one of filters is failed.
+      for (var key in filterFunctions) {
+        
+        if (!filterFunctions[key](data)) {
+          matched = false;
+          break;
+        }
       }
+
+      return matched;
+    } else if (settings.nTable.id == 'recently-viewed-table') {
+      
+      // debugger;
+
+      if ($.inArray(rowId, rowsViewed) != -1)
+        return true;
+      return false;
+
+    } else if (settings.nTable.id == 'comparison-table') {
+      
+      if ($.inArray(rowId, rowsSelected) != -1)
+        return true;
+      return false;
+
     }
 
-    return matched;
+    return true;
   }
 );
 
@@ -408,10 +439,12 @@ function masterFilterAndRender() {
 }
 
 
+var editor; // use a global for the submit and return data rendering in the examples
+
 function initTable() {
 
   // results table
-  $('#results-table').dataTable({
+  var resultsTable = $('#results-table').DataTable({
 
     "ordering": false,
     "info": false,
@@ -427,19 +460,21 @@ function initTable() {
     // "deferRender": true,
     // "scroller": true,
 
-    columnDefs: [{
-      orderable: false,
-      className: 'select-checkbox',
-      targets: 0
-    }],
-
-    select: {
-      style: 'multi',
-      selector: 'td:first-child'
-    },
-
     "columns": [
-      { "title": "", "data": null, "defaultContent": "" },
+      { 
+        "title": "", 
+        "data": "Product ID", 
+        "defaultContent": "",
+        "orderable": false,
+        "className": 'dt-body-center',
+        "width": "1%",
+        "render": function(data, type, row, meta) {
+          if (type === 'display')
+            return '<input type="checkbox" />';
+
+          return data;
+        }
+      },
       { "title": "Carat", "data": "Carat" },
       { "title": "Color", "data": "Color" },
       { "title": "Shape", "data": "Shape" },
@@ -469,15 +504,26 @@ function initTable() {
         "render": function(data, type, row, meta) {
           return '<a href="' + data + '">View</a>';
         }
-      },
+      }
     ],
+
+    "rowCallback": function (row, data, dataIndex) {
+      var rowId = data['Product ID'];
+
+      // if row ID is in the list of selected row IDs
+      if ($.inArray(rowId, rowsSelected) != -1) {
+        $(row).find('input[type="checkbox"]').prop('checked', true);
+      } else {
+        $(row).find('input[type="checkbox"]').prop('checked', false);
+      }
+    },
 
     "data": filtered
   });
 
 
   // recently viewed table
-  $('#recently-viewed-table').dataTable({
+  var recentlyViewedTable = $('#recently-viewed-table').DataTable({
 
     "ordering": false,
     "info": false,
@@ -493,19 +539,21 @@ function initTable() {
     // "deferRender": true,
     // "scroller": true,
 
-    columnDefs: [{
-      orderable: false,
-      className: 'select-checkbox',
-      targets: 0
-    }],
-
-    select: {
-      style: 'multi',
-      selector: 'td:first-child'
-    },
-
     "columns": [
-      { "title": "", "data": null, "defaultContent": "" },
+      { 
+        "title": "", 
+        "data": "Product ID", 
+        "defaultContent": "",
+        "orderable": false,
+        "className": 'dt-body-center',
+        "width": "1%",
+        "render": function(data, type, row, meta) {
+          if (type === 'display')
+            return '<input type="checkbox" />';
+
+          return data;
+        }
+      },
       { "title": "Carat", "data": "Carat" },
       { "title": "Color", "data": "Color" },
       { "title": "Shape", "data": "Shape" },
@@ -535,15 +583,26 @@ function initTable() {
         "render": function(data, type, row, meta) {
           return '<a href="' + data + '">View</a>';
         }
-      },
+      }
     ],
 
-    "data": recentlyViewedRows
+    "rowCallback": function (row, data, dataIndex) {
+      var rowId = data['Product ID'];
+
+      // if row ID is in the list of selected row IDs
+      if ($.inArray(rowId, rowsSelected) != -1) {
+        $(row).find('input[type="checkbox"]').prop('checked', true);
+      } else {
+        $(row).find('input[type="checkbox"]').prop('checked', false);
+      }
+    },
+
+    "data": filtered
   });
 
 
   // comparison table
-  $('#comparison-table').dataTable({
+  var comparisonTable = $('#comparison-table').DataTable({
 
     "ordering": false,
     "info": false,
@@ -559,19 +618,21 @@ function initTable() {
     // "deferRender": true,
     // "scroller": true,
 
-    columnDefs: [{
-      orderable: false,
-      className: 'select-checkbox',
-      targets: 0
-    }],
-
-    select: {
-      style: 'multi',
-      selector: 'td:first-child'
-    },
-
     "columns": [
-      { "title": "", "data": null, "defaultContent": "" },
+      { 
+        "title": "", 
+        "data": "Product ID", 
+        "defaultContent": "",
+        "orderable": false,
+        "className": 'dt-body-center',
+        "width": "1%",
+        "render": function(data, type, row, meta) {
+          if (type === 'display')
+            return '<input type="checkbox" />';
+
+          return data;
+        }
+      },
       { "title": "Carat", "data": "Carat" },
       { "title": "Color", "data": "Color" },
       { "title": "Shape", "data": "Shape" },
@@ -601,26 +662,82 @@ function initTable() {
         "render": function(data, type, row, meta) {
           return '<a href="' + data + '">View</a>';
         }
-      },
+      }
     ],
 
-    "data": comparisonRows
+    "rowCallback": function (row, data, dataIndex) {
+      var rowId = data['Product ID'];
+
+      // if row ID is in the list of selected row IDs
+      if ($.inArray(rowId, rowsSelected) != -1) {
+        $(row).find('input[type="checkbox"]').prop('checked', true);
+      } else {
+        $(row).find('input[type="checkbox"]').prop('checked', false);
+      }
+    },
+
+    "data": filtered
   });
+
+
+  // results table count
+  $('#total-results').html(filtered.length);
+  $('#recently-views').html(rowsViewed.length);
+  $('#comparison-views').html(rowsSelected.length);
 
 
   // event handlers
-  var resultsTable = $('#results-table').DataTable();
+  $('table tbody').on('click', 'tr a', function(e) {
+    var table = $(this).closest('table').DataTable();
+    var $row = $(this).closest('tr');
+    var data = table.row($row).data();
 
-  resultsTable.on('select', function(e, dt, type, indexes) {
-    var rowData = resultsTable.rows({ selected: true });
+    var rowId = data['Product ID'];
 
-    console.log('selected : ' + rowData.count());
-  })
-  .on('deselect', function(e, dt, type, indexes) {
-    var rowData = resultsTable.rows({ selected: true });
-    console.log('selected : ' + rowData.count());
+    var index = $.inArray(rowId, rowsViewed);
+    if (index === -1) {
+      rowsViewed.push(rowId);
+      sessionStorage.setItem('rowsViewed', JSON.stringify(rowsViewed));
+
+      recentlyViewedTable.draw();
+      $('#recently-views').html(rowsViewed.length);
+    }
   });
 
+  
+  // var resultsTable = $('#results-table').DataTable();
+
+  $('#results-table tbody, #recently-viewed-table tbody, #comparison-table tbody').on('change', 'input[type="checkbox"]', function(e) {
+    var $row = $(this).closest('tr');
+
+    var table = $(this).closest('table').DataTable();
+    // get row data
+    var data = table.row($row).data();
+    
+    // get row ID
+    var rowId = data['Product ID'];
+
+    // check whether row ID is in the listof selected row IDs
+    var index = $.inArray(rowId, rowsSelected);
+
+    // if checkbox is checked and row ID is not in list of selected row IDs
+    if (this.checked && index === -1) {
+      rowsSelected.push(rowId);
+    } else if (!this.checked && index !== -1) {
+      rowsSelected.splice(index, 1);
+    }
+    sessionStorage.setItem('rowsSelected', JSON.stringify(rowsSelected));
+
+    // redraw the tables
+    resultsTable.draw();
+    recentlyViewedTable.draw();
+    comparisonTable.draw();    
+
+    $('#comparison-views').html(rowsSelected.length);
+
+    // prevent click event from propagating to parent
+    e.stopPropagation();
+  });
 }
 
 
