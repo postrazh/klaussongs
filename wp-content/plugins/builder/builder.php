@@ -91,52 +91,16 @@ $output .= '<div style="margin-bottom: 200px;"></div>
 
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 filt">
-              <div class="shape-btn" id="shape-princess">
-              <p>Princess</p>
-              <img  src="wp-content/uploads/2019/09/1.png">
-              </div>
-              <div class="shape-btn" id="shape-round">
-              <p>Round</p>
-              <img  src="wp-content/uploads/2019/09/round.png">
-              </div>
-              <div class="shape-btn" id="shape-radiant">
-              <p>Radiant</p>
-              <img  src="wp-content/uploads/2019/09/2.png">
-              </div>
-              <div class="shape-btn" id="shape-heart">
-              <p>Heart</p>
-              <img  src="wp-content/uploads/2019/09/3.png">
-              </div>
-              <div class="shape-btn" id="shape-pear">
-              <p>Pear</p>
-              <img  src="wp-content/uploads/2019/09/4.png">
-              </div>
-              <div class="shape-btn" id="shape-marquise">
-              <p>Marquise</p>
-              <img  src="wp-content/uploads/2019/09/5.png">
-              </div>
-              <div class="shape-btn" id="shape-cushion">
-              <p>Cushion</p>
-              <img  src="wp-content/uploads/2019/09/6.png">
-              </div>
-              <div class="shape-btn" id="shape-asscher">
-              <p>Asscher</p>
-              <img  src="wp-content/uploads/2019/09/7.png">
-              </div>
-              <div class="shape-btn" id="shape-emerald">
-              <p>Emerald</p>
-              <img  src="wp-content/uploads/2019/09/8.png">
-              </div>
-              <div class="shape-btn" id="shape-oval">
-              <p>Oval</p>
-              <img  src="wp-content/uploads/2019/09/9.png">
-              </div>
+          <div class="col-lg filt">
+            <div class="label-slider-filter">Shape</div>
+            <div id="shape"></div>
           </div>
-        <div class="col-lg filt">
-          <div class="label-slider-filter">price</div>
-          <div id="price"></div>
         </div>
+        <div class="row">
+          <div class="col-lg filt">
+            <div class="label-slider-filter">price</div>
+            <div id="price"></div>
+          </div>
         </div>
         <div class="row">
           <div class="col-lg filt">

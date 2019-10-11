@@ -86,6 +86,69 @@ function initSliders() {
     tooltips: true
   });
 
+  // color slider
+  window.shapeSymbol = ['Princess', 'Round', 'Radiant', 'Heart', 'Pear', 'Marquise', 'Cushion', 'Asscher', 'Emerald', 'Oval'];
+  let shapesliderUI = noUiSlider.create(document.getElementById('shape'), {
+    start: [shapeSymbol[0], shapeSymbol[shapeSymbol.length - 1]],
+    step: 1,
+    range: {
+      'min': [0],
+      'max': [shapeSymbol.length - 1]
+    },
+    format: {
+      // 'to' the formatted value. Receives a number.
+      to: function(value) {
+        // console.log("to: ", value);
+        // console.log("to: parseInt: ", Math.round(value));
+        // console.log("to: symbol : ", shapeSymbol[Math.round(value)]);
+
+        return shapeSymbol[Math.round(value)];
+      },
+      // 'from' the formatted value.
+      // Receives a string, should return a number.
+      from: function(value) {
+        console.log("from: ", value);
+
+        let index = shapeSymbol.findIndex((v) => v === value);
+        return index;
+      }
+    },
+    tooltips: false,
+    // pips: {
+    //   mode: 'steps',
+    //   density: 1,
+    //   format: {
+    //     // 'to' the formatted value. Receives a number.
+    //     to: function(value) {
+    //       return shapeSymbol[value];
+    //     },
+    //     // 'from' the formatted value.
+    //     // Receives a string, should return a number.
+    //     from: function(value) {
+    //       let index = shapeSymbol.findIndex((v) => v === value);
+    //       return index;
+    //     }
+    //   },
+    // }
+
+    pips: {
+      mode: 'steps',
+      density: 10,
+      format: {
+        // 'to' the formatted value. Receives a number.
+        to: function(value) {
+          return shapeSymbol[parseInt(value)];
+        },
+        // 'from' the formatted value.
+        // Receives a string, should return a number.
+        from: function(value) {
+          let index = shapeSymbol.findIndex((v) => v === value);
+          return index;
+        }
+      },
+    }
+  });
+
 
   // color slider
   window.colorSymbol = ['J', 'I', 'H', 'G', 'F', 'E', 'D'];
@@ -292,29 +355,6 @@ function initSliders() {
   });
 
   // event handlers
-  let shapeActive = null;
-
-  $('.shape-btn').on('click', function(r) {
-    const shape_btn = r.target.closest("div");
-    const shapeString = shape_btn.id.substring(6);
-
-    $('.shape-btn').removeClass('selectedShape'); // clear all buttons
-    if (shapeActive === shapeString) {
-      filterFunctions['shape'] = null;
-      shapeActive = null;
-    } else {
-      // unclick other shape buttons
-
-      $(shape_btn).addClass('selectedShape');
-      // shapeStates[shapeString] = !shapeStates[shapeString];
-      filterFunctions['shape'] = (data) => { // condition for rejecting data
-        return (data.Shape.toLowerCase() !== shapeString);
-      };
-      shapeActive = shapeString;
-    }
-
-    masterFilterAndRender();
-  });
 
   const cleanPrice = /[$, ]/g;
   priceSliderUI.on("change",
@@ -326,7 +366,7 @@ function initSliders() {
 
       filterFunctions['price'] = (data) => {
         
-        var value = moneyFormat.from(data[4]);
+        var value = moneyFormat.from(data[3]);
         var isInRange = range[0] <= value && value <= range[1];
         return isInRange;
       }
@@ -355,6 +395,31 @@ function initSliders() {
     }
   );
 
+
+  shapesliderUI.on("change",
+    function(r) {
+
+      // console.log("change", r);
+
+      let range = r;
+      range[0] = shapeSymbol.indexOf(range[0]);
+      range[1] = shapeSymbol.indexOf(range[1]);
+      
+      filterFunctions['shape'] = (data) => {
+
+        var value = shapeSymbol.indexOf(data[3]);
+        var isInRange = range[0] <= value && value <= range[1];
+
+        // if(isInRange)
+        //   debugger
+
+        return isInRange;
+      }
+
+      masterFilterAndRender();
+
+    }
+  );
 
   colorsliderUI.on("change",
     function(r) {
