@@ -57,7 +57,7 @@ function initSliders() {
   maxPrice = Math.ceil((maxPrice / 100)) * 100 + 1000;
 
   // price slider
-  window.priceSliderUI = noUiSlider.create(document.getElementById('price'), {
+  let priceSliderUI = noUiSlider.create(document.getElementById('price'), {
     start: [minPrice, maxPrice],
     connect: false,
     animate: false,
@@ -88,7 +88,7 @@ function initSliders() {
 
 
   // color slider
-  let colorSymbol = ['J', 'I', 'H', 'G', 'F', 'E', 'D'];
+  window.colorSymbol = ['J', 'I', 'H', 'G', 'F', 'E', 'D'];
   let colorsliderUI = noUiSlider.create(document.getElementById('color'), {
     start: [colorSymbol[0], colorSymbol[colorSymbol.length - 1]],
     step: 1,
@@ -129,7 +129,7 @@ function initSliders() {
 
 
   // clarity slider
-  let claritySymbol = ['SI2', 'SI1', 'VS2', 'VS1', 'VVS2', 'VVS1', 'IF', 'FL'];
+  window.claritySymbol = ['SI2', 'SI1', 'VS2', 'VS1', 'VVS2', 'VVS1', 'IF', 'FL'];
   let claritySliderUI = noUiSlider.create(document.getElementById('clarity'), {
     start: [claritySymbol[0], claritySymbol[claritySymbol.length - 1]],
     step: 1,
@@ -170,8 +170,7 @@ function initSliders() {
 
 
   // polish slider
-  let polishSymbol = ['Good', 'Very Good', 'Excellent'];
-
+  window.polishSymbol = ['Good', 'Very Good', 'Excellent'];
   let polishSliderUI = noUiSlider.create(document.getElementById('polish'), {
     start: [polishSymbol[0], polishSymbol[polishSymbol.length - 1]],
     step: 1,
@@ -212,8 +211,7 @@ function initSliders() {
 
 
   // report slider
-  let reportSymbol = ['GIA', 'IGI', 'HRD'];
-
+  window.reportSymbol = ['GIA', 'IGI', 'HRD'];
   let reportSliderUI = noUiSlider.create(document.getElementById('report'), {
     start: [reportSymbol[0], reportSymbol[reportSymbol.length - 1]],
     step: 1,
@@ -254,8 +252,7 @@ function initSliders() {
 
 
   // symmetry slider
-  let symmetrySymbol = ['Good', 'Very Good', 'Excellent'];
-
+  window.symmetrySymbol = ['Good', 'Very Good', 'Excellent'];
   let symmetrySliderUI = noUiSlider.create(document.getElementById('symmetry'), {
     start: [symmetrySymbol[0], symmetrySymbol[symmetrySymbol.length - 1]],
     step: 1,
@@ -322,68 +319,136 @@ function initSliders() {
   const cleanPrice = /[$, ]/g;
   priceSliderUI.on("change",
     function(r) {
-      let limitPrice = r;
-      limitPrice[0] = parseFloat(limitPrice[0].replace(cleanPrice, ''));
-      limitPrice[1] = parseFloat(limitPrice[1].replace(cleanPrice, ''));
+      
+      let range = r;
+      range[0] = parseFloat(range[0].replace(cleanPrice, ''));
+      range[1] = parseFloat(range[1].replace(cleanPrice, ''));
 
       filterFunctions['price'] = (data) => {
-        var price = moneyFormat.from(data[4]);
-
-        var isInRange = limitPrice[0] <= price && price <= limitPrice[1];
+        
+        var value = moneyFormat.from(data[4]);
+        var isInRange = range[0] <= value && value <= range[1];
         return isInRange;
       }
 
       masterFilterAndRender();
+
     }
   );
 
   caratSliderUI.on("change",
     function(r) {
-      const caratMaxLimit = parseFloat(r[0]);
-      filterFunctions['carat'] = (data) => parseFloat(data[1]) <= caratMaxLimit;
+
+      let range = r;
+      range[0] = parseFloat(range[0]);
+      range[1] = parseFloat(range[1]);
+
+      filterFunctions['carat'] = (data) => {
+        
+        var value = parseFloat(data[1]);
+        var isInRange = range[0] <= value && value <= range[1];
+        return isInRange;
+      }
+
       masterFilterAndRender();
+
     }
   );
 
 
   colorsliderUI.on("change",
     function(r) {
-      const value = r[0];
-      filterFunctions['Color'] = (data) => data.Color == value;
+
+      let range = r;
+      range[0] = colorSymbol.indexOf(range[0]);
+      range[1] = colorSymbol.indexOf(range[1]);
+      
+      filterFunctions['color'] = (data) => {
+
+        var value = colorSymbol.indexOf(data[2]);
+        var isInRange = range[0] <= value && value <= range[1];
+        return isInRange;
+      }
+
       masterFilterAndRender();
+
     }
   );
 
   claritySliderUI.on("change",
     function(r) {
-      const value = r[0];
-      filterFunctions['Clarity'] = (data) => data[8] == value;
+
+      let range = r;
+      range[0] = claritySymbol.indexOf(range[0]);
+      range[1] = claritySymbol.indexOf(range[1]);
+      
+      filterFunctions['clarity'] = (data) => {
+
+        var value = claritySymbol.indexOf(data[8]);
+        var isInRange = range[0] <= value && value <= range[1];
+        return isInRange;
+      }
+
       masterFilterAndRender();
+
     }
   );
 
 
   polishSliderUI.on("change",
     function(r) {
-      const value = r[0];
-      filterFunctions['Polish'] = (data) => data[9] == value;
+
+      let range = r;
+      range[0] = polishSymbol.indexOf(range[0]);
+      range[1] = polishSymbol.indexOf(range[1]);
+      
+      filterFunctions['polish'] = (data) => {
+
+        var value = polishSymbol.indexOf(data[9]);
+        var isInRange = range[0] <= value && value <= range[1];
+        return isInRange;
+      }
+
       masterFilterAndRender();
+
     }
   );
 
   reportSliderUI.on("change",
     function(r) {
-      const value = r[0];
-      filterFunctions['Report'] = (data) => data[7] == value;
+
+      let range = r;
+      range[0] = reportSymbol.indexOf(range[0]);
+      range[1] = reportSymbol.indexOf(range[1]);
+      
+      filterFunctions['report'] = (data) => {
+
+        var value = reportSymbol.indexOf(data[7]);
+        var isInRange = range[0] <= value && value <= range[1];
+        return isInRange;
+      }
+
       masterFilterAndRender();
+
     }
   );
 
   symmetrySliderUI.on("change",
     function(r) {
-      const value = r[0];
-      filterFunctions['Symmetry'] = (data) => data[6] == value;
+
+      let range = r;
+      range[0] = symmetrySymbol.indexOf(range[0]);
+      range[1] = symmetrySymbol.indexOf(range[1]);
+      
+      filterFunctions['symmetry'] = (data) => {
+
+        var value = symmetrySymbol.indexOf(data[6]);
+        var isInRange = range[0] <= value && value <= range[1];
+        return isInRange;
+      }
+
       masterFilterAndRender();
+
     }
   );
 };
