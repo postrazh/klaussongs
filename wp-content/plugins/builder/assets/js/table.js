@@ -365,8 +365,7 @@ function initSliders() {
       range[1] = parseFloat(range[1].replace(cleanPrice, ''));
 
       filterFunctions['price'] = (data) => {
-        
-        var value = moneyFormat.from(data[3]);
+        var value = moneyFormat.from(data[4]);
         var isInRange = range[0] <= value && value <= range[1];
         return isInRange;
       }
@@ -378,7 +377,6 @@ function initSliders() {
 
   caratSliderUI.on("change",
     function(r) {
-
       let range = r;
       range[0] = parseFloat(range[0]);
       range[1] = parseFloat(range[1]);
