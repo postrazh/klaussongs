@@ -1,0 +1,23 @@
+
+table.pricetable {
+	border:1px solid #C0C0C0;
+	border-collapse:collapse;
+	padding:5px;		
+	background: white;
+	margin-right: 30px;
+}
+
+table.pricetable th {
+	border:1px solid #C0C0C0;
+	padding:5px;
+	text-align: center;
+
+	background: #e7e1e1;
+	color: black;
+}
+
+table.pricetable td {
+	border:1px solid #C0C0C0;
+	padding:5px;
+	text-align: center;	
+}
