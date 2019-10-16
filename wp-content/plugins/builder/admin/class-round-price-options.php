@@ -145,8 +145,8 @@ class Builder_RoundPriceOptions {
 	}
 
 	function add_scripts () {
-		wp_register_style( 'rp_style', BUILDER_URL . '/assets/css/round-price.css' );
-		wp_register_script( 'rp_script', BUILDER_URL . '/assets/js/round-price.js',
+		wp_register_style( 'rp_style', BUILDER_URL . 'assets/css/round-price.css' );
+		wp_register_script( 'rp_script', BUILDER_URL . 'assets/js/round-price.js',
 			array('jquery'), '', true );
 		
 		// enqueue script, css

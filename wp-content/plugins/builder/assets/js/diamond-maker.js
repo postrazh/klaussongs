@@ -1,10 +1,8 @@
+
+
 // table variables
-filtered.forEach(
-  r => {
-    r.Carat = parseFloat(r.Carat);
-    r.Price = parseFloat(r.Price.replace(/[$,]/g, ""));
-  }
-);
+
+var filtered;
 
 // selected row IDs
 var rowsSelected = [];
@@ -18,10 +16,6 @@ let savedRowsViewed = sessionStorage['rowsViewed'];
 if (savedRowsViewed != undefined) 
   rowsViewed = JSON.parse(sessionStorage['rowsViewed']);
 
-// tabs
-$("#tabs").tabs({
-  event: "mouseover"
-});
 
 // table filter
 var filterFunctions = {};
@@ -870,6 +864,30 @@ function initTable() {
 
 
 $(document).ready(function() {
+  // get data from wp
+  filtered = myData.map(row =>
+    Object.fromEntries(
+      Object.entries(row).filter(it => { 
+        let key = it[0]; 
+        // add the product id and the product image path to it to make it happen bro
+        return ['Product ID', 'Carat','Clarity','Shape', 'Price', 'Color', 'Cut','Symmetry','Report', 'link_view', 'Polish' ].indexOf(key) >= 0  }
+      )
+    )
+  );
+
+
+  filtered.forEach(
+  r => {
+    r.Carat = parseFloat(r.Carat);
+    r.Price = parseFloat(r.Price.replace(/[$,]/g, ""));
+  }
+  );
+
+  // tabs
+  $("#tabs").tabs({
+    event: "mouseover"
+  });
+
   // slider
   initSliders();
 
